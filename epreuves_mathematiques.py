@@ -14,17 +14,18 @@ def epreuve_math_factorielle() :
     y = int(input((" Votre réponse : ")))
 
     reponse_correcte = factorielle(x)
+    reponse_donnee = y
 
-    if reponse_correcte == y:
+    if reponse_correcte == reponse_donnee:
         print("Correct! Vous gagnez une clé")
         return True
     else :
         print("Désolé la réponse correcte était {}.".format(reponse_correcte))
         return False
-
     return y
 
-print(epreuve_math_factorielle())
+epreuve_math_factorielle()
+
 def epreuve_math_premier() :
     print(epreuve_math_premier)
 
