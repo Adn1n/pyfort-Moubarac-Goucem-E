@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="commit message">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="j'ai fait le jeu sur bonneteau">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/epreuves_hasard.py" beforeDir="false" afterPath="$PROJECT_DIR$/epreuves_hasard.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,18 +44,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.epreuves_hasard.executor": "Run",
+    "Python.epreuves_mathematiques.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Projet_python" />
@@ -89,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733311432920</updated>
-      <workItem from="1733311435267" duration="1627000" />
+      <workItem from="1733311435267" duration="34806000" />
     </task>
     <task id="LOCAL-00001" summary="commit message">
       <option name="closed" value="true" />
@@ -99,7 +110,71 @@
       <option name="project" value="LOCAL" />
       <updated>1733403530526</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit message">
+      <option name="closed" value="true" />
+      <created>1733403570786</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733403570786</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit message">
+      <option name="closed" value="true" />
+      <created>1733403607617</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733403607617</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit message">
+      <option name="closed" value="true" />
+      <created>1733418458592</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733418458592</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit message">
+      <option name="closed" value="true" />
+      <created>1733418577859</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733418577859</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit message">
+      <option name="closed" value="true" />
+      <created>1733423331359</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733423331359</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit message">
+      <option name="closed" value="true" />
+      <created>1733576022529</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733576022529</updated>
+    </task>
+    <task id="LOCAL-00008" summary="j'ai fini les epreuves mathematiques">
+      <option name="closed" value="true" />
+      <created>1733593104513</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733593104513</updated>
+    </task>
+    <task id="LOCAL-00009" summary="j'ai fait le jeu sur bonneteau">
+      <option name="closed" value="true" />
+      <created>1733598409744</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733598409744</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +193,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit message" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit message" />
+    <MESSAGE value="nouveau" />
+    <MESSAGE value="j'ai fini les epreuves mathematiques" />
+    <MESSAGE value="j'ai fait le jeu sur bonneteau" />
+    <option name="LAST_COMMIT_MESSAGE" value="j'ai fait le jeu sur bonneteau" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Projet_python$epreuves_hasard.coverage" NAME="epreuves_hasard Coverage Results" MODIFIED="1733694006875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$epreuves_mathematiques.coverage" NAME="epreuves_mathematiques Coverage Results" MODIFIED="1733618606218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$main.coverage" NAME="main Coverage Results" MODIFIED="1733421036897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
