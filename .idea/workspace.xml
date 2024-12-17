@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="j'ai fait le jeu sur bonneteau">
+    <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="j'ai fini les epreuves hasards">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/epreuves_hasard.py" beforeDir="false" afterPath="$PROJECT_DIR$/epreuves_hasard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonctions_utiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonctions_utiles.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +48,7 @@
   "keyToString": {
     "Python.epreuves_hasard.executor": "Run",
     "Python.epreuves_mathematiques.executor": "Run",
+    "Python.fonctions_utiles.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -100,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733311432920</updated>
-      <workItem from="1733311435267" duration="34806000" />
+      <workItem from="1733311435267" duration="43678000" />
     </task>
     <task id="LOCAL-00001" summary="commit message">
       <option name="closed" value="true" />
@@ -174,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733598409744</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="j'ai fini les epreuves hasards">
+      <option name="closed" value="true" />
+      <created>1733694358319</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733694358319</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,11 +205,13 @@
     <MESSAGE value="nouveau" />
     <MESSAGE value="j'ai fini les epreuves mathematiques" />
     <MESSAGE value="j'ai fait le jeu sur bonneteau" />
-    <option name="LAST_COMMIT_MESSAGE" value="j'ai fait le jeu sur bonneteau" />
+    <MESSAGE value="j'ai fini les epreuves hasards" />
+    <option name="LAST_COMMIT_MESSAGE" value="j'ai fini les epreuves hasards" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Projet_python$epreuves_hasard.coverage" NAME="epreuves_hasard Coverage Results" MODIFIED="1733694006875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projet_python$epreuves_mathematiques.coverage" NAME="epreuves_mathematiques Coverage Results" MODIFIED="1733618606218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$epreuves_hasard.coverage" NAME="epreuves_hasard Coverage Results" MODIFIED="1734018314108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$fonctions_utiles.coverage" NAME="fonctions_utiles Coverage Results" MODIFIED="1733698096494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$epreuves_mathematiques.coverage" NAME="epreuves_mathematiques Coverage Results" MODIFIED="1733740723965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Projet_python$main.coverage" NAME="main Coverage Results" MODIFIED="1733421036897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

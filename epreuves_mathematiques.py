@@ -140,14 +140,18 @@ def epreuve_math_equation() :
 
 
 def epreuve_math() :
+    print()
     print("Prêt pour un challenge mathématique ? L’aventure commence maintenant !")
     time.sleep(5)
+    print()
 
     print("L’heure du défi a sonné ! Une des épreuves suivantes te sera attribuée au hasard : factorielle, nombres premiers, roulette mathématique ou équations.")
     time.sleep(7)
+    print()
 
     print("Roulement de tambour… Découvrons ensemble quel défi te sera attribué !")
     time.sleep(3)
+    print()
 
     epreuves = [epreuve_math_factorielle, epreuve_math_premier, epreuve_roulette_mathematique,epreuve_math_equation]
     x = random.choice(epreuves)()
@@ -156,7 +160,7 @@ def epreuve_math() :
     else :
         return False
 
-epreuve_math()
+
 
 
 

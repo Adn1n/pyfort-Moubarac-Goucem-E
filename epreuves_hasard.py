@@ -174,6 +174,7 @@ def message_debut ():
 
 
 def epreuve_hasard() :
+    print()
 
     message_debut ()
     epreuves = [bonneteau,jeu_lance_des]
@@ -184,5 +185,5 @@ def epreuve_hasard() :
     else :
         return False
 
-epreuve_hasard()
+
 
