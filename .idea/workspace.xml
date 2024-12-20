@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="j'ai fini les epreuves hasards">
+    <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="coucou">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enigme_pere_fouras.py" beforeDir="false" afterPath="$PROJECT_DIR$/enigme_pere_fouras.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fonctions_utiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonctions_utiles.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +48,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.enigme_pere_fouras.executor": "Run",
+    "Python.epreuve_finale.executor": "Run",
     "Python.epreuves_hasard.executor": "Run",
     "Python.epreuves_mathematiques.executor": "Run",
     "Python.fonctions_utiles.executor": "Run",
@@ -101,7 +105,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733311432920</updated>
-      <workItem from="1733311435267" duration="43678000" />
+      <workItem from="1733311435267" duration="59667000" />
+      <workItem from="1734614789502" duration="11331000" />
     </task>
     <task id="LOCAL-00001" summary="commit message">
       <option name="closed" value="true" />
@@ -183,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733694358319</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="j'ai fini les epreuves hasards">
+      <option name="closed" value="true" />
+      <created>1734471824803</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734471824803</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,12 +219,15 @@
     <MESSAGE value="j'ai fini les epreuves mathematiques" />
     <MESSAGE value="j'ai fait le jeu sur bonneteau" />
     <MESSAGE value="j'ai fini les epreuves hasards" />
-    <option name="LAST_COMMIT_MESSAGE" value="j'ai fini les epreuves hasards" />
+    <MESSAGE value="coucou" />
+    <option name="LAST_COMMIT_MESSAGE" value="coucou" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Projet_python$epreuves_hasard.coverage" NAME="epreuves_hasard Coverage Results" MODIFIED="1734018314108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projet_python$fonctions_utiles.coverage" NAME="fonctions_utiles Coverage Results" MODIFIED="1733698096494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projet_python$epreuves_mathematiques.coverage" NAME="epreuves_mathematiques Coverage Results" MODIFIED="1733740723965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projet_python$main.coverage" NAME="main Coverage Results" MODIFIED="1733421036897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$epreuve_finale.coverage" NAME="epreuve_finale Coverage Results" MODIFIED="1734471443646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$epreuves_hasard.coverage" NAME="epreuves_hasard Coverage Results" MODIFIED="1734471571428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$fonctions_utiles.coverage" NAME="fonctions_utiles Coverage Results" MODIFIED="1734615693885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$epreuves_mathematiques.coverage" NAME="epreuves_mathematiques Coverage Results" MODIFIED="1734471531192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$main.coverage" NAME="main Coverage Results" MODIFIED="1734615064956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$enigme_pere_fouras.coverage" NAME="enigme_pere_fouras Coverage Results" MODIFIED="1734647183280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

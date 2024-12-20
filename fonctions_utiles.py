@@ -79,7 +79,7 @@ def composer_equipe() :
     for personne in l:
         print(personne)
 
-
+composer_equipe()
 
 def menu_epreuves() :
     print()
