@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="coucou">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enigme_pere_fouras.py" beforeDir="false" afterPath="$PROJECT_DIR$/enigme_pere_fouras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonctions_utiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/fonctions_utiles.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733311432920</updated>
       <workItem from="1733311435267" duration="59667000" />
-      <workItem from="1734614789502" duration="11331000" />
+      <workItem from="1734614789502" duration="14880000" />
     </task>
     <task id="LOCAL-00001" summary="commit message">
       <option name="closed" value="true" />
@@ -196,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734471824803</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="coucou">
+      <option name="closed" value="true" />
+      <created>1734694648069</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1734694648069</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

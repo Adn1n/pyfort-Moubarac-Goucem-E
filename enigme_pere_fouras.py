@@ -11,11 +11,11 @@ def charger_enigmes() :
 def enigme_pere_fouras() :
     dico = {}
     liste_enigmes = charger_enigmes()
-    enigne_choisie = random.choice(liste_enigmes)
-    for i in enigne_choisie:
-        print(enigne_choisie[i])
+    enigme_choisie = random.choice(liste_enigmes)
+    for i in enigme_choisie:
+        print(enigme_choisie[i])
 
-    print(enigne_choisie)
+    print(enigme_choisie)
 
 enigme_pere_fouras()
 
