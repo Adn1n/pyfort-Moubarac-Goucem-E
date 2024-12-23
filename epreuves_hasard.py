@@ -58,7 +58,7 @@ def bonneteau() :
             print()
             time.sleep(2)
             essaie += 1
-            nb_essaie_restant = essaie - 1
+
 
             print("Il vous reste encore {} essaie".format(3 - essaie))
             print()

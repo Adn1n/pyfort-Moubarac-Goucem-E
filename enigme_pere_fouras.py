@@ -2,6 +2,13 @@ import json
 import random
 import time
 
+def intro () :
+    print("Bienvenue dans l'antre du Père Fouras !")
+    time.sleep(2)
+    print("Attention, vous n’avez que 3 essais. Bonne chance !")
+    time.sleep(2)
+    print()
+
 def charger_enigmes() :
     with open ("data/enigmesPF.json", "r",encoding= 'utf-8') as f :
         donnees = json.load(f)
@@ -10,12 +17,81 @@ def charger_enigmes() :
 
 def enigme_pere_fouras() :
     dico = {}
-    liste_enigmes = charger_enigmes()
-    enigme_choisie = random.choice(liste_enigmes)
-    for i in enigme_choisie:
-        print(enigme_choisie[i])
+    essai = 1
+    essai_restant = 3
+    resultat = False
+    intro()
+    while essai <= 3 and resultat == False :
 
-    print(enigme_choisie)
+        liste_enigmes = charger_enigmes()
+        enigme_choisie = random.choice(liste_enigmes)
+        reel_reponse = enigme_choisie["reponse"].lower()
+        question_utilisateur = enigme_choisie["question"].split("\n")
+
+
+
+        print("Émission   : {}".format(enigme_choisie["emission"]))
+        time.sleep(1)
+        print("Numero     : {}".format(enigme_choisie["numero"]))
+        print("Type       : {}".format(enigme_choisie["type"]))
+        time.sleep(2)
+        print()
+        time.sleep(1)
+        print("Plongeons dans le mystère... Voici votre question !")
+        time.sleep(2)
+        print()
+        for phrase in question_utilisateur:
+            print(phrase)
+            time.sleep(2)
+        time.sleep(2)
+        print()
+
+        reponse = input("Réponse    : ")
+        reponse = reponse.lower()
+
+
+
+        if reponse == reel_reponse:
+            print()
+            print("Excellente déduction, aventurier ! Vous gagnez une clé.")
+            time.sleep(2)
+            resultat = True
+
+        else :
+            if essai_restant >= 1 :
+
+                print("Reprenez vos esprits et tentez de nouveau !")
+                print()
+                time.sleep(2)
+                print('La réponse était {}. '.format(enigme_choisie["reponse"]))
+                time.sleep(2)
+                print("Courage, il vous reste {} essai(s)".format(essai_restant))
+                print()
+                time.sleep(3)
+                essai += 1
+                time.sleep(2)
+                print()
+
+
+    if resultat == False :
+        print("Même les plus grands esprits échouent parfois. Relevez-vous et continuez. ")
+        time.sleep(2)
+        print("L'épreuve est terminée. Revenez plus fort pour les prochaines énigmes.")
+        print()
+        time.sleep(1)
+        return False
+
+
+
+
+
+
+
+
+
+
+
+
 
 enigme_pere_fouras()
 
