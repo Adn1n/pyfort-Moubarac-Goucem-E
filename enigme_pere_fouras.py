@@ -39,10 +39,11 @@ def enigme_pere_fouras() :
         time.sleep(1)
         print("Plongeons dans le mystère... Voici votre question !")
         time.sleep(2)
-        print()
+        print("-"*45)
         for phrase in question_utilisateur:
-            print(phrase)
+            print('| {:^10} '.format(phrase))
             time.sleep(2)
+        print("-" * 45)
         time.sleep(2)
         print()
 
@@ -58,6 +59,7 @@ def enigme_pere_fouras() :
             resultat = True
 
         else :
+            essai_restant -= 1
             if essai_restant >= 1 :
 
                 print("Reprenez vos esprits et tentez de nouveau !")
@@ -65,32 +67,24 @@ def enigme_pere_fouras() :
                 time.sleep(2)
                 print('La réponse était {}. '.format(enigme_choisie["reponse"]))
                 time.sleep(2)
-                print("Courage, il vous reste {} essai(s)".format(essai_restant))
+                print("Courage, il vous reste {} encore essai(s)".format(essai_restant))
                 print()
                 time.sleep(3)
                 essai += 1
                 time.sleep(2)
                 print()
-
-
-    if resultat == False :
-        print("Même les plus grands esprits échouent parfois. Relevez-vous et continuez. ")
-        time.sleep(2)
-        print("L'épreuve est terminée. Revenez plus fort pour les prochaines énigmes.")
-        print()
-        time.sleep(1)
-        return False
-
-
-
-
-
-
-
-
-
-
-
+            else :
+                print("Réponse incorrect")
+                print('La réponse était {}. '.format(enigme_choisie["reponse"]))
+                time.sleep(2)
+                print()
+                print("Même les plus grands esprits échouent parfois. Relevez-vous et continuez. ")
+                time.sleep(2)
+                print("L'épreuve est terminée. Revenez plus fort pour les prochaines énigmes.")
+                print()
+                time.sleep(1)
+                resultat = True
+                return False
 
 
 enigme_pere_fouras()

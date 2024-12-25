@@ -27,16 +27,6 @@ def premier_caractere_majuscule(chaine) :
     return premier_lettre + reste
 
 #-----------------------------------------------------------------------------------------------------------------------
-def premier_caractere_majuscule(chaine) :
-
-
-    chaine = chaine.lower()
-    premier_lettre = chaine[0]
-    if 'a' <= premier_lettre <= 'z':
-        premier_lettre = chr(ord(premier_lettre) - 32)
-
-    reste = chaine[1:]
-    return premier_lettre + reste
 
 #-----------------------------------------------------------------------------------------------------------------------
 
