@@ -15,18 +15,16 @@ def introduction() :
     print("Une fois les trois clés en main, la salle du trésor t’attend !")
     time.sleep(2)
 
+
+
 def premier_caractere_majuscule(chaine) :
+    chaine = chaine.lower() # Transformation de la chaine avec toutes les lettres en minuscules
+    premier_lettre = chaine[0] # Affectation de la premiere lettre
+    if 'a' <= premier_lettre <= 'z': # Condition si la premiere lettre se trouve en 'a' et 'z'
+        premier_lettre = chr(ord(premier_lettre) - 32) # Transformation de la lettre en majuscules avec le code ASCII
 
-
-    chaine = chaine.lower()
-    premier_lettre = chaine[0]
-    if 'a' <= premier_lettre <= 'z':
-        premier_lettre = chr(ord(premier_lettre) - 32)
-
-    reste = chaine[1:]
-    return premier_lettre + reste
-
-#-----------------------------------------------------------------------------------------------------------------------
+    reste = chaine[1:] # Reste de la chaine de caractère qui est en minuscule
+    return premier_lettre + reste # Retourne la chaine de caractère avec la premiere lettre en majuscule
 
 #-----------------------------------------------------------------------------------------------------------------------
 

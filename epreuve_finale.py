@@ -12,6 +12,7 @@ def premier_caractere_majuscule(chaine) :
     return premier_lettre + reste # Retourne la chaine de caractère avec la premiere lettre en majuscule
 
 
+# Introduction à l'épreuve de la Salle du Trésor : elle renvoie rien mais elle affiche le texte
 def intro_enigmes():
     print("Bienvenue dans la Salle du Trésor !")
     time.sleep(1)
@@ -25,6 +26,7 @@ def intro_enigmes():
     time.sleep(2)
     print()
 
+# Fonction principale pour la Salle du Trésor : revoie Vrai ou Faux en fonction des résultats
 
 def salle_De_Tresor () :
     liste_annee = [] # Création d'une liste pour les années
@@ -48,7 +50,9 @@ def salle_De_Tresor () :
         liste_emission.append(emission)
 
     emission = random.choice(liste_emission) # Choix aléatoire de l'émission
-    print("Bienvenue dans l'{} !".format(emission))
+
+    # Affichage utilisateur
+    print("Voici l'{} pour vous de l'année {} !".format(emission,annee))
     print()
     time.sleep(2)
     print("Voici vos premiers indices, observez bien : chaque mot est une clé pour votre succès.")
@@ -70,46 +74,54 @@ def salle_De_Tresor () :
     indices_restantes = {} # Set vide
     indices_restantes = indices[2:] # Affectation des indices restants dans le set
 
-    nb_indice = 1
+    nb_indice = 1 # Initialisation compteur
     print()
     for indice in trois_premier_indices : # Boucle pour afficher en sautant des lignes les indices
         print("Indice {} : {}".format(nb_indice, indice))
         time.sleep(2)
         nb_indice += 1
 
-    essaie = 4
-    reponse_correcte = False
+    essaie = 4 # Initialisation
+    reponse_correcte = False # Initialisation
 
 
-
+    # Boucle principale :  Tant que le joueur dispose encore des essais et qu'il n'a pas trouvé de réponse
     while reponse_correcte == False and essaie > 0:
-        saisie_utilisateur = input("Entrez la solution qui déverrouillera la Salle du Trésor : ")
-        saisie_utilisateur = saisie_utilisateur.lower()
 
-        if saisie_utilisateur == reponse_correcte:
+        # Demande la réponse de l'utilisateur
+        saisie_utilisateur = input("Entrez la solution qui déverrouillera la Salle du Trésor : ")
+        saisie_utilisateur = saisie_utilisateur.lower() # Transformation de la réponse en minuscule afin de la comparer
+
+        if saisie_utilisateur == reponse :
+            print("Bravo ! Vous avez trouvé la bonne réponse !")
+            time.sleep(2)
             reponse_correcte = True
         else:
             essaie -= 1
-            if essaie > 0:
-                print("Il vous reste encore {} essaie(s)".format(essaie))
+            if essaie > 0: # s'il reste encore des essais, donner une nouvelle indice
+                print("Raté ! Réfléchissez bien, il vous reste {} tentative(s)".format(essaie))
+                time.sleep(2)
                 print()
                 print("Voici un indice supplémentaire ")
-                del indices_restantes[0]
+                time.sleep(2)
+                del indices_restantes[0] #Supprime la premiere indice
                 print("Indice {} : {}".format(nb_indice, indices_restantes[0]))
+                time.sleep(1)
                 nb_indice += 1
             else :
                 print("Vous ne disposez plus d'essaie.")
                 time.sleep(1)
                 print()
                 print("La réponse était {} ".format(reponse_afficher_utilisateur))
+                time.sleep(2)
 
 
     if reponse_correcte == True:
         print()
-        print("Vous avez gagné !")
+        print("Félicitations, vous avez remporté la partie !")
         return True
     else :
-        print("Vous avez perdu")
+        print("C’est perdu, mais ce n’est qu’un jeu ! ")
         return False
 
 
