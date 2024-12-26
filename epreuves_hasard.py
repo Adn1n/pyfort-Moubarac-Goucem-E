@@ -1,7 +1,8 @@
+# Import des bibliothèques nécessaires
 import random
 import time
 
-
+# Message de bienvenue et présentent les régles, il n'y a pas de valeur renvoyer car il affiche juste le message
 def message_bienvenue():
     print("Bienvenue dans le jeu du Bonneteau !")
     print()
@@ -17,25 +18,29 @@ def message_bienvenue():
     print()
     time.sleep(4)
 
+#Fonction principal de l'épreuve, il renvoie si le joueur a gagné ou pas en fonction de ses résultats
 def bonneteau() :
-    liste = ['A','B','C']
-    l = ['A', 'B', 'C', 'a', 'b', 'c']
+    liste = ['A','B','C'] # Liste des bonneteaux disponibles
+    l = ['A', 'B', 'C', 'a', 'b', 'c']# Inclut des lettres minuscules pour gérer les entrées insensibles à la casse
     message_bienvenue()
     print("Choisissez entre l'un des trois bonneteau disponible : " + " ".join(liste))
-    essaie = 1
-    reponse = False
-    while essaie <= 2 and reponse == False:
+    essaie = 1  # Compteur d'essais
+    reponse = False # Variable qui permet de suivre les résultats du joueur
 
-        x = random.choice(liste)
+    # Boucle principale
+    while essaie <= 2 and reponse == False: # Le joueur a deux essais maximum
+
+        x = random.choice(liste) # La clé est placée aléatoirement
 
         choix_joueur = input("Choisissez un bonneteau : ")
         print()
-
+        # Vérification de l'entrée du joueur
         while choix_joueur not in l:
             print("Choix invalide. Veuillez choisir parmi A, B ou C.")
             choix_joueur = input()
             print()
 
+        # Convertit les minuscules en majuscules
         if choix_joueur in ['a', 'b', 'c']:
 
             if choix_joueur == 'a':
@@ -45,13 +50,12 @@ def bonneteau() :
                 choix_joueur = 'B'
             else:
                 choix_joueur = 'C'
-
+        # Vérification si le joueur a trouvé la clé
         if choix_joueur == x:
             print("Félicitations ! Vous avez trouvé la clé sous le bonneteau choisi.")
             print()
             time.sleep(4)
             reponse = True
-
 
         else:
             print("Dommage, la clé n'était pas sous ce bonneteau.")
@@ -64,6 +68,7 @@ def bonneteau() :
             print()
             time.sleep(4)
 
+    # Résultat final
     if reponse == False:
         print("Vous avez perdu. La clé était sous le bonneteau : ", x)
         print()
@@ -73,7 +78,7 @@ def bonneteau() :
 
 
 
-
+# Fonction affichant les règles du jeu du lancer de dés, il ne renvoie rien mais affiche le message
 def message ():
     print("Bienvenue dans le jeu du lancer de dés !")
     print()
@@ -92,26 +97,27 @@ def message ():
     print()
     time.sleep(4)
 
-
+# Fonction permettant de simuler un lancer de dés
 def lance_de():
     print("Appuyez sur la touche 'Entrée' pour lancer vos dés.")
     input()
 
-
+# Fonction principale pour le jeu du lancer de dés
 def jeu_lance_des() :
+
     message()
+    de = [1, 2, 3, 4, 5, 6] # Liste contenant les faces disponibles
 
+    match = False  # Indique si un joueur a obtenu un 6
+    essaie = 1 # Compteur d'essais
 
-    de = [1, 2, 3, 4, 5, 6]
-
-    match = False
-    essaie = 1
-
-    while essaie <= 3 and match == False:
-        tpl_1 = ()
-        tpl_2 = ()
+    # Boucle principale
+    while essaie <= 3 and match == False: # Chaque joueur possède 3 essais
+        tpl_1 = () # Lancers du joueur
+        tpl_2 = () # Lancers du maître du jeu
         print("Il vous reste encore {} essaie.".format(4 - essaie))
-        lance_de()
+        lance_de() # Fonction d'affichage pour le joueur
+        # Lancer des dés pour le joueur
         de_joueur1 = random.choice(de)
         de_joueur2 = random.choice(de)
         tpl_1 = de_joueur1, de_joueur2
@@ -120,12 +126,13 @@ def jeu_lance_des() :
         print()
         time.sleep(3)
 
-        if 6 in tpl_1:
-            match = True
+        # Vérification si le joueur a obtenu un 6
+        if 6 in tpl_1: # Regarde s'il y a un 6 dans le tuple du joueur
+            match = True # La partie est terminé
             print("Félicitations ! Vous avez remporté la partie, la clé est à vous !")
             print()
             time.sleep(2)
-            return True
+            return True # Le joueur a remporté la partie
         else:
             print("Le jeu n’est pas terminé ! Laissez-vous une autre chance !")
             print()
@@ -134,6 +141,7 @@ def jeu_lance_des() :
             print("C'est maintenant au tour du maître du jeu de lancer les dés...")
             print()
             time.sleep(4)
+            # Lancer des dés pour le maître du jeu
             de_maitre1 = random.choice(de)
             de_maitre2 = random.choice(de)
             tpl_2 = (de_maitre1, de_maitre2)
@@ -143,14 +151,16 @@ def jeu_lance_des() :
             print()
             time.sleep(3)
 
+            # Vérification si le maître du jeu a obtenu un 6
             if 6 in tpl_2:
-                match = True
+                match = True # La partie est terminé
                 print("Le maître du jeu a remporté la partie, la clé est à lui !")
                 time.sleep(2)
-                return False
+                return False # Le joueur a perdu la perdu
 
-        essaie += 1
+        essaie += 1 # Incrémentation du compteur d'essais
 
+    # Si la partie est un match donc ce massage s'affiche
     if match == False:
         print("Aucun joueur n'a obtenu un 6 après trois essais...")
         print()
@@ -161,6 +171,7 @@ def jeu_lance_des() :
         time.sleep(2)
         return False
 
+# Message de bienvenue dans les épreuvres hasards, il ne renvoie rien et juste affiche le texte
 def message_debut ():
     print("Bienvenue dans l'arène du hasard ! ")
     time.sleep(3)
@@ -177,9 +188,10 @@ def epreuve_hasard() :
     print()
 
     message_debut ()
-    epreuves = [bonneteau,jeu_lance_des]
-    x = random.choice(epreuves)()
+    epreuves = [bonneteau,jeu_lance_des]  # Liste des épreuves possibles
+    x = random.choice(epreuves)() # Choix aléatoire de l'épreuve
 
+    # Permet de savoir si le joueur a remporté l'épreuve ou pas
     if x == True :
         return True
     else :

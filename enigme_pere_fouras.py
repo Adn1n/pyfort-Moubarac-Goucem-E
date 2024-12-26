@@ -1,3 +1,4 @@
+# Import des bibliothèques nécessaires
 import json
 import random
 import time

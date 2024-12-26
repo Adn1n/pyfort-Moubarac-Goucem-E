@@ -1,30 +1,32 @@
+# Import des bibliothèques nécessaires
 import random
 import time
 
+# Calcul la factotielle d'un nombre et renvoie son factoctielle
 def factorielle(n) :
-    x = 1
+    x = 1 # Initialisation à 1 car c'est des multiplications
     for i in range(1, n + 1):
         x *= i
-    return x
+    return x # Renvoie la factorielle
 
 def epreuve_math_factorielle() :
     print("Es-tu prêt à multiplier les défis ? Voici la factorielle !")
     time.sleep(3)
-    x = random.randint(1,10)
+    x = random.randint(1,10) # Choisit aléatoirement une variable x entre 1 et 10
     print(" Épreuve de Mathématiques: Calculer la factorielle de ",x)
     time.sleep(2)
     y = int(input(" Votre réponse : "))
 
-    reponse_correcte = factorielle(x)
-    reponse_donnee = y
+    reponse_correcte = factorielle(x) # Affectation de la reponse correcte grace à notre fonction factorielle
+    reponse_donnee = y # Réponse utilisateur
 
-    if reponse_correcte == reponse_donnee:
+    if reponse_correcte == reponse_donnee: # Comparaison de la réponse
         print("Correct! Vous gagnez une clé")
-        return True
+        return True # La réponse à étè trouvé
     else :
         print("Désolé la réponse correcte était {}.".format(reponse_correcte))
-        return False
-    return reponse_donnee
+        return False  # La réponse n'a pas étè trouvé
+
 
 
 
