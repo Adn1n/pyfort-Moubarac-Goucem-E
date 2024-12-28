@@ -198,7 +198,7 @@ def epreuve_math() :
     time.sleep(3)
     print()
 
-    # Liste des épreuves disponibles
+    # Liste des épreuves disponibles.
     epreuves = [epreuve_math_factorielle, epreuve_math_premier, epreuve_roulette_mathematique,epreuve_math_equation]
     resultat_epreuve = random.choice(epreuves)()  # Choisit une épreuve au hasard et l'exécute
 
