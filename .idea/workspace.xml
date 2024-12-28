@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="Commentaire epreuves hasards terminé">
-      <change beforePath="$PROJECT_DIR$/epreuves_mathematiques.py" beforeDir="false" afterPath="$PROJECT_DIR$/epreuves_mathematiques.py" afterDir="false" />
+    <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="Read me">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/epreuves_hasard.py" beforeDir="false" afterPath="$PROJECT_DIR$/epreuves_hasard.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +23,22 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Adn1n&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "state": "OPEN",
+      "assignee": "Adn1n",
+      "author": "Playboicarti92i"
+    }
+  ],
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Adn1n",
+    "author": "Playboicarti92i"
   }
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Adn1n/Projet_python.git&quot;,
@@ -43,24 +54,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.enigme_pere_fouras.executor&quot;: &quot;Run&quot;,
-    &quot;Python.epreuve_finale.executor&quot;: &quot;Run&quot;,
-    &quot;Python.epreuves_hasard.executor&quot;: &quot;Run&quot;,
-    &quot;Python.epreuves_mathematiques.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fonctions_utiles.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.enigme_pere_fouras.executor": "Run",
+    "Python.epreuve_finale.executor": "Run",
+    "Python.epreuves_hasard.executor": "Run",
+    "Python.epreuves_mathematiques.executor": "Run",
+    "Python.fonctions_utiles.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Projet_python" />
@@ -241,7 +253,31 @@
       <option name="project" value="LOCAL" />
       <updated>1735217710242</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Epreuve Math Commenaire tout finis">
+      <option name="closed" value="true" />
+      <created>1735400162667</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1735400162667</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Epreuve Math Commenaire tout finis">
+      <option name="closed" value="true" />
+      <created>1735400316254</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1735400316254</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Read me">
+      <option name="closed" value="true" />
+      <created>1735400586781</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1735400586781</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +304,8 @@
     <MESSAGE value="IL FAUT ECRIRES LES COMMMENTAIRES" />
     <MESSAGE value="Commentaire epreuves hasards terminé" />
     <MESSAGE value="Epreuve Math Commenaire tout finis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Epreuve Math Commenaire tout finis" />
+    <MESSAGE value="Read me" />
+    <option name="LAST_COMMIT_MESSAGE" value="Read me" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Projet_python$epreuve_finale.coverage" NAME="epreuve_finale Coverage Results" MODIFIED="1735215319674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

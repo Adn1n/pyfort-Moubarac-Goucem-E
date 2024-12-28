@@ -2,7 +2,10 @@
 import random
 import time
 
-# Message de bienvenue et présentent les régles, il n'y a pas de valeur renvoyer car il affiche juste le message
+# Message de bienvenue et présentant les règles.
+#Role : Affiche un message d'accueil et les règles du jeu du bonneteau.
+# Paramètre : Aucun
+# Résultat retourné : Aucun (Affichage)
 def message_bienvenue():
     print("Bienvenue dans le jeu du Bonneteau !")
     print()
@@ -18,10 +21,14 @@ def message_bienvenue():
     print()
     time.sleep(4)
 
-#Fonction principal de l'épreuve, il renvoie si le joueur a gagné ou pas en fonction de ses résultats
+# Fonction principal de l'épreuve de bonneteau
+# Role : Simule le jeu du bonneteau où le joueur doit deviner sous quel bonneteau se trouve la clé.
+# Paramètre : Aucun
+# Résultat retourné : True si le joueur trouve la clé, False sinon
+
 def bonneteau() :
     liste = ['A','B','C'] # Liste des bonneteaux disponibles
-    l = ['A', 'B', 'C', 'a', 'b', 'c']# Inclut des lettres minuscules pour gérer les entrées insensibles à la casse
+    liste_valeur_possible = ['A', 'B', 'C', 'a', 'b', 'c']# Inclut des lettres minuscules pour gérer les entrées insensibles à la casse
     message_bienvenue()
     print("Choisissez entre l'un des trois bonneteau disponible : " + " ".join(liste))
     essaie = 1  # Compteur d'essais
@@ -35,7 +42,7 @@ def bonneteau() :
         choix_joueur = input("Choisissez un bonneteau : ")
         print()
         # Vérification de l'entrée du joueur
-        while choix_joueur not in l:
+        while choix_joueur not in liste_valeur_possible:
             print("Choix invalide. Veuillez choisir parmi A, B ou C.")
             choix_joueur = input()
             print()
@@ -50,6 +57,7 @@ def bonneteau() :
                 choix_joueur = 'B'
             else:
                 choix_joueur = 'C'
+
         # Vérification si le joueur a trouvé la clé
         if choix_joueur == x:
             print("Félicitations ! Vous avez trouvé la clé sous le bonneteau choisi.")
@@ -78,7 +86,10 @@ def bonneteau() :
 
 
 
-# Fonction affichant les règles du jeu du lancer de dés, il ne renvoie rien mais affiche le message
+# Fonction affichant les règles du jeu du lancer de dés
+# Role : Présente le contexte et les règles du jeu de lancer de dés.
+# Paramètre : Aucun
+# Résultat retourné : Aucun (Affichage)
 def message ():
     print("Bienvenue dans le jeu du lancer de dés !")
     print()
@@ -97,12 +108,21 @@ def message ():
     print()
     time.sleep(4)
 
-# Fonction permettant de simuler un lancer de dés
+#Fonction permettant de simuler un lancer de dés
+# Role : Attend que l'utilisateur appuie sur Entrée pour simuler un lancer de dés.
+# Paramètre : Aucun
+# Résultat retourné : Aucun
+
 def lance_de():
     print("Appuyez sur la touche 'Entrée' pour lancer vos dés.")
     input()
 
+
 # Fonction principale pour le jeu du lancer de dés
+# Role : Simule une partie où le joueur et le maître du jeu s'affrontent avec des lancers de dés.
+# Paramètre : Aucun
+# Résultat retourné : True si le joueur obtient un 6 en premier,
+#                     False si le maître du jeu gagne ou si c'est un match nul.
 def jeu_lance_des() :
 
     message()
@@ -171,7 +191,10 @@ def jeu_lance_des() :
         time.sleep(2)
         return False
 
-# Message de bienvenue dans les épreuvres hasards, il ne renvoie rien et juste affiche le texte
+# Message de bienvenue dans les épreuvres hasards
+# Role : Affiche un message d'introduction aux épreuves
+# Paramètre : Aucun
+# Résultat retourné : Aucun (Affichage)
 def message_debut ():
     print("Bienvenue dans l'arène du hasard ! ")
     time.sleep(3)
@@ -184,15 +207,22 @@ def message_debut ():
     time.sleep(4)
 
 
+# Épreuve du hasard
+# Role : Choisit aléatoirement entre le jeu du bonneteau ou le lancer de dés et lance l'épreuve choisie.
+# Paramètre : Aucun
+# Résultat retourné : True si le joueur réussit l'épreuve choisie,
+#                     False sinon
+
 def epreuve_hasard() :
+
     print()
 
     message_debut ()
     epreuves = [bonneteau,jeu_lance_des]  # Liste des épreuves possibles
-    x = random.choice(epreuves)() # Choix aléatoire de l'épreuve
+    epreuves_choisie = random.choice(epreuves)() # Choix aléatoire de l'épreuve
 
     # Permet de savoir si le joueur a remporté l'épreuve ou pas
-    if x == True :
+    if epreuves_choisie == True :
         return True
     else :
         return False
