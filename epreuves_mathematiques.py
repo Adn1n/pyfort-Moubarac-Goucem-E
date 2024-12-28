@@ -200,9 +200,9 @@ def epreuve_math() :
 
     # Liste des épreuves disponibles
     epreuves = [epreuve_math_factorielle, epreuve_math_premier, epreuve_roulette_mathematique,epreuve_math_equation]
-    reultat_epreuve = random.choice(epreuves)()  # Choisit une épreuve au hasard et l'exécute
+    resultat_epreuve = random.choice(epreuves)()  # Choisit une épreuve au hasard et l'exécute
 
-    if reultat_epreuve == True :  # Si l'épreuve est réussie
+    if resultat_epreuve == True :  # Si l'épreuve est réussie
         return True
     else :
         return False
