@@ -1,13 +1,32 @@
+"""
+Module : Salle du Trésor - Fort Boyard
+
+Description :
+Ce fichier contient le code pour gérer l'épreuve de la Salle du Trésor dans le jeu Fort Boyard.
+Le joueur doit découvrir un mot-code en se basant sur des indices, avec un maximum de trois essais.
+
+Fonctionnalités principales :
+- Lecture des indices et du mot-code à partir d'un fichier JSON.
+- Interaction utilisateur avec présentation des indices un à un.
+- Gestion des essais restants et affichage progressif des indices.
+
+Auteurs :
+- Adnan MOUBARAC : Développement principal, Messages de bienvenus,
+- Cylia GOUCEM : Développement principal, ergonomie
+Date de création : 25/12/2024
+"""
+
+
 # Import des bibliothèques nécessaires
 import random
 import time
 import json
-
-# Fonction qui met la première lettre d'une chaîne en majuscule
-# Role : Met en majuscule la première lettre d'une chaîne tout en maintenant les autres lettres en minuscule
-# Paramètre : la chaîne de caractères à transformer (chaine)
-# Résultat retourné : la chaîne avec la première lettre en majuscule (premier_lettre + reste)
-
+"""
+Fonction qui met la première lettre d'une chaîne en majuscule
+Role : Met en majuscule la première lettre d'une chaîne tout en maintenant les autres lettres en minuscule
+Paramètre : la chaîne de caractères à transformer (chaine)
+Résultat retourné : la chaîne avec la première lettre en majuscule (premier_lettre + reste)
+"""
 def premier_caractere_majuscule(chaine) :
     chaine = chaine.lower() # Transformation de la chaine avec toutes les lettres en minuscules
     premier_lettre = chaine[0] # Affectation de la premiere lettre
@@ -18,11 +37,12 @@ def premier_caractere_majuscule(chaine) :
     return premier_lettre + reste # Retourne la chaine de caractère avec la premiere lettre en majuscule
 
 
-
-# Fonction d'introduction du jeu
-# Role : Affiche l'introduction du jeu pour l'utilisateur
-# Paramètre : Aucun
-# Résultat retourné : Aucun (Affichage)
+"""
+Fonction d'introduction du jeu
+Role : Affiche l'introduction du jeu pour l'utilisateur
+Paramètre : Aucun
+Résultat retourné : Aucun (Affichage)
+"""
 def intro_enigmes():
     print("Bienvenue dans la Salle du Trésor !")
     time.sleep(1)
@@ -36,11 +56,13 @@ def intro_enigmes():
     time.sleep(2)
     print()
 
-# Fonction principale pour la Salle du Trésor
-# Role : Simule une épreuve où le joueur à trois essais pour trouver la bonne réponse.
-# Paramètre : Aucun
-# Résultat retourné : True si le joueur trouve la réponse, False sinon
 
+"""
+Fonction principale pour la Salle du Trésor
+Role : Simule une épreuve où le joueur à trois essais pour trouver la bonne réponse.
+Paramètre : Aucun
+Résultat retourné : True si le joueur trouve la réponse, False sinon
+"""
 def salle_De_Tresor () :
     liste_annee = [] # Création d'une liste pour les années
     liste_emission =[] # Création d'une liste pour les émissions
