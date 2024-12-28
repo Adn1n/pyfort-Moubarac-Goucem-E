@@ -3,6 +3,11 @@ import random
 import time
 import json
 
+# Fonction qui met la première lettre d'une chaîne en majuscule
+# Role : Met en majuscule la première lettre d'une chaîne tout en maintenant les autres lettres en minuscule
+# Paramètre : la chaîne de caractères à transformer (chaine)
+# Résultat retourné : la chaîne avec la première lettre en majuscule (premier_lettre + reste)
+
 def premier_caractere_majuscule(chaine) :
     chaine = chaine.lower() # Transformation de la chaine avec toutes les lettres en minuscules
     premier_lettre = chaine[0] # Affectation de la premiere lettre
@@ -13,7 +18,11 @@ def premier_caractere_majuscule(chaine) :
     return premier_lettre + reste # Retourne la chaine de caractère avec la premiere lettre en majuscule
 
 
-# Introduction à l'épreuve de la Salle du Trésor : elle renvoie rien mais elle affiche le texte
+
+# Fonction d'introduction du jeu
+# Role : Affiche l'introduction du jeu pour l'utilisateur
+# Paramètre : Aucun
+# Résultat retourné : Aucun (Affichage)
 def intro_enigmes():
     print("Bienvenue dans la Salle du Trésor !")
     time.sleep(1)
@@ -27,7 +36,10 @@ def intro_enigmes():
     time.sleep(2)
     print()
 
-# Fonction principale pour la Salle du Trésor : revoie Vrai ou Faux en fonction des résultats
+# Fonction principale pour la Salle du Trésor
+# Role : Simule une épreuve où le joueur à trois essais pour trouver la bonne réponse.
+# Paramètre : Aucun
+# Résultat retourné : True si le joueur trouve la réponse, False sinon
 
 def salle_De_Tresor () :
     liste_annee = [] # Création d'une liste pour les années
@@ -73,7 +85,9 @@ def salle_De_Tresor () :
 
     trois_premier_indices = indices[:3] # Liste contenant que les trois premiers indices
     indices_restantes = {} # Set vide
-    indices_restantes = indices[2:] # Affectation des indices restants dans le set
+    indices_restantes = indices[2:] # Affectation des indices restants dans le set,
+    #                    on prend enn compte l'élèment au deuxième indice, dans notre boucle afin d'afficher
+    #                    les indices un par un, on va supprimer le premier
 
     nb_indice = 1 # Initialisation compteur
     print()
@@ -86,7 +100,7 @@ def salle_De_Tresor () :
     reponse_correcte = False # Initialisation
 
 
-    # Boucle principale :  Tant que le joueur dispose encore des essais et qu'il n'a pas trouvé de réponse
+    # Boucle principale : Tant que le joueur dispose encore des essais et qu'il n'a pas trouvé de réponse
     while reponse_correcte == False and essaie > 0:
 
         # Demande la réponse de l'utilisateur
@@ -99,7 +113,7 @@ def salle_De_Tresor () :
             reponse_correcte = True
         else:
             essaie -= 1
-            if essaie > 0: # s'il reste encore des essais, donner une nouvelle indice
+            if essaie > 0: # s'il reste encore des essais, donner un nouvel indice
                 print("Raté ! Réfléchissez bien, il vous reste {} tentative(s)".format(essaie))
                 time.sleep(2)
                 print()
@@ -117,13 +131,13 @@ def salle_De_Tresor () :
                 time.sleep(2)
 
 
-    if reponse_correcte == True:
+    if reponse_correcte == True: # Vérification de la réponse
         print()
         print("Félicitations, vous avez remporté la partie !")
-        return True
+        return True # Le joueur a trouvé la bonne réponse
     else :
         print("C’est perdu, mais ce n’est qu’un jeu ! ")
-        return False
+        return False # Le joueur n'a pas trouvé la réponse
 
 
 
