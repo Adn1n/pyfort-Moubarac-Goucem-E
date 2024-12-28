@@ -1,12 +1,34 @@
+"""
+Module : Énigmes du Père Fouras - Fort Boyard
+
+Description :
+
+Ce module gère l'épreuve des énigmes du Père Fouras pour le jeu Fort Boyard.
+
+Les fonctionnalités incluent :
+- Chargement des énigmes depuis un fichier JSON.
+- Sélection aléatoire d'une énigme.
+- Interaction utilisateur pour deviner la réponse en 3 essais maximum.
+
+Auteurs :
+- Adnan MOUBARAC : Développement principal, l'ergonomie.
+- Cylia GOUCEM : Développement principal, l'ergonomie.
+
+Date de création : 17/12/2024
+"""
+
+
 # Import des bibliothèques nécessaires
 import json
 import random
 import time
 
-# Fonction qui introduit l'épreuve
-# Role : Affiche un texte d'introduction et les règles pour l'épreuve des énigmes du Père Fouras.
-# Paramètre : Aucun
-# Résultat retourné : Aucun (Affichage)
+"""
+Fonction qui introduit l'épreuve
+Role : Affiche un texte d'introduction et les règles pour l'épreuve des énigmes du Père Fouras.
+Paramètre : Aucun
+Résultat retourné : Aucun (Affichage)
+"""
 def intro () :
     print("Bienvenue dans l'antre du Père Fouras !")
     time.sleep(2)
@@ -14,24 +36,24 @@ def intro () :
     time.sleep(2)
     print()
 
-
-# Chargement des fichiers JSON :
-# Role : Charge et retourne les énigmes depuis un fichier JSON contenant les données des énigmes.
-# Paramètre : Aucun
-# Résultat retourné : Liste des énigmes sous forme de dictionnaires.
-
+"""
+Chargement des fichiers JSON :
+Role : Charge et retourne les énigmes depuis un fichier JSON contenant les données des énigmes.
+Paramètre : Aucun
+Résultat retourné : Liste des énigmes sous forme de dictionnaires.
+"""
 def charger_enigmes() :
     with open ("data/enigmesPF.json", "r",encoding= 'utf-8') as f :
         donnees = json.load(f)
     return donnees
 
-
-# Fonction principale pour lancer l'énigme du Père Fouras.
-# Role : Simule une épreuve d'énigmes où le joueur à trois essais pour trouver la bonne réponse.
-# Paramètre : Aucun
-# Résultat retourné : True si le joueur trouve la bonne réponse à l'énigme.
-#                     False si le joueur échoue après avoir épuisé ses trois essais.
-
+"""
+Fonction principale pour lancer l'énigme du Père Fouras.
+Role : Simule une épreuve d'énigmes où le joueur à trois essais pour trouver la bonne réponse.
+Paramètre : Aucun
+Résultat retourné : True si le joueur trouve la bonne réponse à l'énigme.
+                    False si le joueur échoue après avoir épuisé ses trois essais.
+"""
 def enigme_pere_fouras() :
 
     dico = {} # Affectation d'un set vide
