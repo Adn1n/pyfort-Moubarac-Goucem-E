@@ -27,7 +27,7 @@ def charger_enigmes() :
 
 
 # Fonction principale pour lancer l'énigme du Père Fouras.
-# Role : Simule une épreuve d'énigmes où le joueur a 3 essais pour trouver la bonne réponse.
+# Role : Simule une épreuve d'énigmes où le joueur à trois essais pour trouver la bonne réponse.
 # Paramètre : Aucun
 # Résultat retourné : True si le joueur trouve la bonne réponse à l'énigme.
 #                     False si le joueur échoue après avoir épuisé ses trois essais.
