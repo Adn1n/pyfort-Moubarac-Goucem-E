@@ -1,23 +1,48 @@
+"""
+Épreuves Mathématiques - Fort Boyard
+
+Description :
+Ce fichier contient l'ensemble des fonctions nécessaires pour gérer les épreuves mathématiques
+du jeu "Fort Boyard". Les épreuves proposées incluent :
+
+1. Calcul de la factorielle.
+2. Résolution d'équations linéaires.
+3. Recherche de nombres premiers.
+4. Calculs sur une liste de nombres (roulette mathématique).
+
+Chaque épreuve est autonome et peut être appelée individuellement.
+Une fonction principale permet de sélectionner et lancer une épreuve au hasard.
+
+Auteurs :
+- Adnan MOUBARAC : Développement des épreuves roulette mathématique et math équations.
+- Cylia GOUCEM : Développemetn des épreuves factorielles et nombre premier
+
+Date de création : 05/12/2024
+"""
+
+
+
 # Import des bibliothèques nécessaires
 import random
 import time
 
-
-# Role : # Calcul la factorielle d'un nombre
-# Paramètre : n (int) : Le nombre dont on veut calculer la factorielle.
-# Résultat retourné : La factorielle de n.
-
+"""
+Role : # Calcul la factorielle d'un nombre
+Paramètre : n (int) : Le nombre dont on veut calculer la factorielle.
+Résultat retourné : La factorielle de n.
+"""
 def factorielle(n) :
     x = 1 # # Initialisation à un car la factorielle est un produit.
     for i in range(1, n + 1):
         x *= i # Multiplie x par i à chaque itération.
     return x # Renvoie la factorielle
 
-# Role : Propose à l'utilisateur de calculer la factorielle d'un nombre choisi aléatoirement
-# Paramètre : Aucun
-# Résultat retourné : Retourne True si la réponse de l'utilisateur est correcte.
-#                     Retourne False si la réponse est incorrecte.
-
+"""
+Role : Propose à l'utilisateur de calculer la factorielle d'un nombre choisi aléatoirement
+Paramètre : Aucun
+Résultat retourné : Retourne True si la réponse de l'utilisateur est correcte.
+                    Retourne False si la réponse est incorrecte.
+"""
 def epreuve_math_factorielle() :
     print("Es-tu prêt à multiplier les défis ? Voici la factorielle !")
     time.sleep(3)
@@ -39,13 +64,13 @@ def epreuve_math_factorielle() :
 
 
 
-
-# Fonction pour vérifier si un nombre est premier
-# Role : Déterminer si un nombre donné est un nombre premier.
-# Paramètre : n (int) : Le nombre à vérifier.
-# Résultat retourné : Retourne True si n est un nombre premier.
-#                     Retourne False si n n'est pas un nombre premier.
-
+"""
+Fonction pour vérifier si un nombre est premier
+Role : Déterminer si un nombre donné est un nombre premier.
+Paramètre : n (int) : Le nombre à vérifier.
+Résultat retourné : Retourne True si n est un nombre premier.
+                    Retourne False si n n'est pas un nombre premier.
+"""
 def est_premier(n):
     if n <= 1 :
         return False # Les nombres inférieurs ou égale à un ne sont pas premiers.
@@ -54,21 +79,27 @@ def est_premier(n):
             return False # n'est divisible par i, donc ce n'est pas un nombre premier
     return True  # Si aucune division n'est trouvée, n est premier
 
-# Fonction qui permet de trouver le nombre premier le plus proche
-# Role : Trouver le plus proche nombre premier supérieur ou égal à un nombre donné.
-# Paramètre : n (int), le nombre à partir duquel on commence à vérifier.
-# Résultat retourné : Retourne le nombre premier le plus proche (n).
 
+"""
+Fonction qui permet de trouver le nombre premier le plus proche
+Role : Trouver le plus proche nombre premier supérieur ou égal à un nombre donné.
+Paramètre : n (int), le nombre à partir duquel on commence à vérifier.
+Résultat retourné : Retourne le nombre premier le plus proche (n).
+"""
 def premier_plus_proche(n):
     while not est_premier(n):  # Boucle tant que n n'est pas un nombre premier.
         n += 1 # Incrémente n jusqu'à trouver un nombre premier.
     return n # Renvoie le nombre premier trouvé.
 
 
-# Fonction pour l'épreuve des nombres premiers
-# Role : Propose au joueur de trouver le nombre premier le plus proche d'un nombre aléatoire généré.
-# Paramètre : Aucun
-# Résultat retourné : Renvoi TRUE si le joueur a donné la bonne réponse, Renvoi False si la réponse est incorrecte
+
+"""
+Fonction pour l'épreuve des nombres premiers
+Role : Propose au joueur de trouver le nombre premier le plus proche d'un nombre aléatoire généré.
+Paramètre : Aucun
+Résultat retourné : Renvoi TRUE si le joueur a donné la bonne réponse,
+                    Renvoi False si la réponse est incorrecte
+"""
 def epreuve_math_premier() :
     print("Les nombres premiers t’attendent. Sauras-tu relever ce défi ?!")
     time.sleep(3)
@@ -86,13 +117,13 @@ def epreuve_math_premier() :
 
 
 
-
-# Fonction pour l'épreuve de la roulette mathématique
-# Role : Demande au joueur de calculer le résultat d'une opération (addition, soustraction, multiplication) appliquée à une liste de nombres aléatoires.
-# Paramètre : Aucun
-# Résultat retourné : Renvoie True si la réponse du joueur est correcte,
-#                     Renvoie False si la réponse est incorrecte.
-
+"""
+Fonction pour l'épreuve de la roulette mathématique
+Role : Demande au joueur de calculer le résultat d'une opération (addition, soustraction, multiplication) appliquée à une liste de nombres aléatoires.
+Paramètre : Aucun
+Résultat retourné : Renvoie True si la réponse du joueur est correcte,
+                    Renvoie False si la réponse est incorrecte.
+"""
 def epreuve_roulette_mathematique() :
     print("La roulette des nombres est en marche. Prépare-toi à être surpris !")
     time.sleep(3)
@@ -141,12 +172,14 @@ def epreuve_roulette_mathematique() :
         return False
 
 
-# Fonction pour résoudre une équation linéaire
-# Role : Génère une équation linéaire de la forme ax + b = 0, et calcule sa solution.
-# Paramètre : Aucun
-# Résultat retourné : Renvoie un tuple (a, b, solution), où a et b sont les coefficients générés
-#  et solution est la solution de l'équation arrondie au centième.
 
+"""
+Fonction pour résoudre une équation linéaire
+Role : Génère une équation linéaire de la forme ax + b = 0, et calcule sa solution.
+Paramètre : Aucun
+Résultat retourné : Renvoie un tuple (a, b, solution), où a et b sont les coefficients générés
+et solution est la solution de l'équation arrondie au centième.
+"""
 def resoudre_equation_lineaire() :
 
     a = random.randint(0,10) # Coefficient de x (évite 0 pour ne pas diviser par 0)
@@ -154,12 +187,15 @@ def resoudre_equation_lineaire() :
     solution = round(-b/a,2) # Calcule la solution arrondie au centième
     return a,b,solution  # Renvoie les paramètres de l'équation et la solution
 
-# Fonction pour l'épreuve de résolution d'équation
-# Role : Demande au joueur de résoudre une équation linéaire de la forme ax + b = 0.
-# Paramètre : Aucun
-# Résultat retourné : Renvoie True si le joueur a donné la bonne solution.
-#                     Renvoie False si la réponse est incorrecte.
 
+
+"""
+Fonction pour l'épreuve de résolution d'équation
+Role : Demande au joueur de résoudre une équation linéaire de la forme ax + b = 0.
+Paramètre : Aucun
+Résultat retourné : Renvoie True si le joueur a donné la bonne solution.
+                    Renvoie False si la réponse est incorrecte.
+"""
 def epreuve_math_equation() :
     print("Les mystères des équations t’appellent. Vas-tu les déchiffrer ?")
     time.sleep(3)
@@ -179,11 +215,12 @@ def epreuve_math_equation() :
 
 
 
-
-# Fonction principale pour choisir une épreuve mathématique au hasard
-# Role : Permet de lancer une épreuve au hasard
-# Paramètre : Aucun
-# Résultat retourné : Renvoie les résultats de l'épreuve choisie
+"""
+Fonction principale pour choisir une épreuve mathématique au hasard
+Role : Permet de lancer une épreuve au hasard
+Paramètre : Aucun
+Résultat retourné : Renvoie les résultats de l'épreuve choisie
+"""
 def epreuve_math() :
     print()
     print("Prêt pour un challenge mathématique ? L’aventure commence maintenant !")

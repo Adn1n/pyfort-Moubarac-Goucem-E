@@ -1,11 +1,29 @@
+"""
+Module : Épreuves de Hasard - Fort Boyard
+
+Description :
+Ce fichier contient les épreuves liées au hasard dans le jeu Fort Boyard. Il inclut :
+- Jeu du bonneteau.
+- Lancer de dés.
+Une fonction principale choisit et exécute l'une des épreuves de façon aléatoire.
+
+Auteurs :
+-Adnan MOUBARAC : Développement des messages de bienvenues, et l'épreuve de lance dés
+-Cylia GOUCEM : Développement du jeu de bonneteau et de l'ergonomie
+
+Date de création : 07/12/2024
+"""
+
 # Import des bibliothèques nécessaires
 import random
 import time
 
-# Message de bienvenue et présentant les règles.
-#Role : Affiche un message d'accueil et les règles du jeu du bonneteau.
-# Paramètre : Aucun
-# Résultat retourné : Aucun (Affichage)
+"""
+Message de bienvenue et présentant les règles.
+Role : Affiche un message d'accueil et les règles du jeu du bonneteau.
+Paramètre : Aucun
+Résultat retourné : Aucun (Affichage)
+"""
 def message_bienvenue():
     print("Bienvenue dans le jeu du Bonneteau !")
     print()
@@ -21,11 +39,12 @@ def message_bienvenue():
     print()
     time.sleep(4)
 
-# Fonction principal de l'épreuve de bonneteau
-# Role : Simule le jeu du bonneteau où le joueur doit deviner sous quel bonneteau se trouve la clé.
-# Paramètre : Aucun
-# Résultat retourné : True si le joueur trouve la clé, False sinon
-
+"""
+Fonction principal de l'épreuve de bonneteau
+Role : Simule le jeu du bonneteau où le joueur doit deviner sous quel bonneteau se trouve la clé.
+Paramètre : Aucun
+Résultat retourné : True si le joueur trouve la clé, False sinon
+"""
 def bonneteau() :
     liste = ['A','B','C'] # Liste des bonneteaux disponibles
     liste_valeur_possible = ['A', 'B', 'C', 'a', 'b', 'c']# Inclut des lettres minuscules pour gérer les entrées insensibles à la casse
@@ -37,7 +56,7 @@ def bonneteau() :
     # Boucle principale
     while essaie <= 2 and reponse == False: # Le joueur a deux essais maximum
 
-        x = random.choice(liste) # La clé est placée aléatoirement
+        placement_cle = random.choice(liste) # La clé est placée aléatoirement
 
         choix_joueur = input("Choisissez un bonneteau : ")
         print()
@@ -59,7 +78,7 @@ def bonneteau() :
                 choix_joueur = 'C'
 
         # Vérification si le joueur a trouvé la clé
-        if choix_joueur == x:
+        if choix_joueur == placement_cle:
             print("Félicitations ! Vous avez trouvé la clé sous le bonneteau choisi.")
             print()
             time.sleep(4)
@@ -78,18 +97,19 @@ def bonneteau() :
 
     # Résultat final
     if reponse == False:
-        print("Vous avez perdu. La clé était sous le bonneteau : ", x)
+        print("Vous avez perdu. La clé était sous le bonneteau : ", placement_cle)
         print()
         return False
     else :
         return True
 
 
-
-# Fonction affichant les règles du jeu du lancer de dés
-# Role : Présente le contexte et les règles du jeu de lancer de dés.
-# Paramètre : Aucun
-# Résultat retourné : Aucun (Affichage)
+"""
+Fonction affichant les règles du jeu du lancer de dés
+Role : Présente le contexte et les règles du jeu de lancer de dés.
+Paramètre : Aucun
+Résultat retourné : Aucun (Affichage)
+"""
 def message ():
     print("Bienvenue dans le jeu du lancer de dés !")
     print()
@@ -108,21 +128,23 @@ def message ():
     print()
     time.sleep(4)
 
-#Fonction permettant de simuler un lancer de dés
-# Role : Attend que l'utilisateur appuie sur Entrée pour simuler un lancer de dés.
-# Paramètre : Aucun
-# Résultat retourné : Aucun
-
+"""
+Fonction permettant de simuler un lancer de dés
+Role : Attend que l'utilisateur appuie sur Entrée pour simuler un lancer de dés.
+Paramètre : Aucun
+Résultat retourné : Aucun
+"""
 def lance_de():
     print("Appuyez sur la touche 'Entrée' pour lancer vos dés.")
     input()
 
-
-# Fonction principale pour le jeu du lancer de dés
-# Role : Simule une partie où le joueur et le maître du jeu s'affrontent avec des lancers de dés.
-# Paramètre : Aucun
-# Résultat retourné : True si le joueur obtient un 6 en premier,
-#                     False si le maître du jeu gagne ou si c'est un match nul.
+"""
+Fonction principale pour le jeu du lancer de dés
+Role : Simule une partie où le joueur et le maître du jeu s'affrontent avec des lancers de dés.
+Paramètre : Aucun
+Résultat retourné : True si le joueur obtient un 6 en premier,
+                    False si le maître du jeu gagne ou si c'est un match nul.
+"""
 def jeu_lance_des() :
 
     message()
@@ -133,21 +155,21 @@ def jeu_lance_des() :
 
     # Boucle principale
     while essaie <= 3 and match == False: # Chaque joueur possède 3 essais
-        tpl_1 = () # Lancers du joueur
-        tpl_2 = () # Lancers du maître du jeu
+        lancers_joueur = () # Lancers du joueur
+        lancers_maitre = () # Lancers du maître du jeu
         print("Il vous reste encore {} essaie.".format(4 - essaie))
         lance_de() # Fonction d'affichage pour le joueur
         # Lancer des dés pour le joueur
         de_joueur1 = random.choice(de)
         de_joueur2 = random.choice(de)
-        tpl_1 = de_joueur1, de_joueur2
+        lancers_joueur = de_joueur1, de_joueur2
 
         print("Vous avez lancé les dés : {} et {}.".format(de_joueur1, de_joueur2))
         print()
         time.sleep(3)
 
         # Vérification si le joueur a obtenu un 6
-        if 6 in tpl_1: # Regarde s'il y a un 6 dans le tuple du joueur
+        if 6 in lancers_joueur: # Regarde s'il y a un 6 dans le tuple du joueur
             match = True # La partie est terminé
             print("Félicitations ! Vous avez remporté la partie, la clé est à vous !")
             print()
@@ -164,7 +186,7 @@ def jeu_lance_des() :
             # Lancer des dés pour le maître du jeu
             de_maitre1 = random.choice(de)
             de_maitre2 = random.choice(de)
-            tpl_2 = (de_maitre1, de_maitre2)
+            lancers_maitre = (de_maitre1, de_maitre2)
 
             print("Le maître du jeu a lancé les dés : {} et {}.".format(de_maitre1, de_maitre2))
             print()
@@ -172,7 +194,7 @@ def jeu_lance_des() :
             time.sleep(3)
 
             # Vérification si le maître du jeu a obtenu un 6
-            if 6 in tpl_2:
+            if 6 in lancers_maitre:
                 match = True # La partie est terminé
                 print("Le maître du jeu a remporté la partie, la clé est à lui !")
                 time.sleep(2)
@@ -191,10 +213,12 @@ def jeu_lance_des() :
         time.sleep(2)
         return False
 
-# Message de bienvenue dans les épreuvres hasards
-# Role : Affiche un message d'introduction aux épreuves
-# Paramètre : Aucun
-# Résultat retourné : Aucun (Affichage)
+"""
+Message de bienvenue dans les épreuves hasards
+Role : Affiche un message d'introduction aux épreuves
+Paramètre : Aucun
+Résultat retourné : Aucun (Affichage)
+"""
 def message_debut ():
     print("Bienvenue dans l'arène du hasard ! ")
     time.sleep(3)
@@ -206,13 +230,13 @@ def message_debut ():
     print()
     time.sleep(4)
 
-
-# Épreuve du hasard
-# Role : Choisit aléatoirement entre le jeu du bonneteau ou le lancer de dés et lance l'épreuve choisie.
-# Paramètre : Aucun
-# Résultat retourné : True si le joueur réussit l'épreuve choisie,
-#                     False sinon
-
+"""
+Épreuve du hasard
+Role : Choisit aléatoirement entre le jeu du bonneteau ou le lancer de dés et lance l'épreuve choisie.
+Paramètre : Aucun
+Résultat retourné : True si le joueur réussit l'épreuve choisie,
+                    False sinon
+"""
 def epreuve_hasard() :
 
     print()
