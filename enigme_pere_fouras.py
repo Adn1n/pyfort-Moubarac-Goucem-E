@@ -2,13 +2,7 @@
 Module : Énigmes du Père Fouras - Fort Boyard
 
 Description :
-
 Ce module gère l'épreuve des énigmes du Père Fouras pour le jeu Fort Boyard.
-
-Les fonctionnalités incluent :
-- Chargement des énigmes depuis un fichier JSON.
-- Sélection aléatoire d'une énigme.
-- Interaction utilisateur pour deviner la réponse en 3 essais maximum.
 
 Auteurs :
 - Adnan MOUBARAC : Développement principal, l'ergonomie.

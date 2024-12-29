@@ -10,7 +10,6 @@ du jeu "Fort Boyard". Les épreuves proposées incluent :
 3. Recherche de nombres premiers.
 4. Calculs sur une liste de nombres (roulette mathématique).
 
-Chaque épreuve est autonome et peut être appelée individuellement.
 Une fonction principale permet de sélectionner et lancer une épreuve au hasard.
 
 Auteurs :

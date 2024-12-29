@@ -5,11 +5,6 @@ Description :
 Ce fichier contient le code pour gérer l'épreuve de la Salle du Trésor dans le jeu Fort Boyard.
 Le joueur doit découvrir un mot-code en se basant sur des indices, avec un maximum de trois essais.
 
-Fonctionnalités principales :
-- Lecture des indices et du mot-code à partir d'un fichier JSON.
-- Interaction utilisateur avec présentation des indices un à un.
-- Gestion des essais restants et affichage progressif des indices.
-
 Auteurs :
 - Adnan MOUBARAC : Développement principal, Messages de bienvenus,
 - Cylia GOUCEM : Développement principal, ergonomie
