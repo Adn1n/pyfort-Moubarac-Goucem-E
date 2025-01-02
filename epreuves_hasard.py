@@ -96,7 +96,7 @@ def bonneteau() :
             time.sleep(4)
 
     # Résultat final
-    if reponse == False:
+    if not reponse :
         print("Vous avez perdu. La clé était sous le bonneteau : ", placement_cle)
         print()
         return False
@@ -170,7 +170,7 @@ def jeu_lance_des() :
 
         # Vérification si le joueur a obtenu un 6
         if 6 in lancers_joueur: # Regarde s'il y a un 6 dans le tuple du joueur
-            match = True # La partie est terminé
+            match = True # La partie est terminée
             print("Félicitations ! Vous avez remporté la partie, la clé est à vous !")
             print()
             time.sleep(2)
@@ -195,7 +195,7 @@ def jeu_lance_des() :
 
             # Vérification si le maître du jeu a obtenu un 6
             if 6 in lancers_maitre:
-                match = True # La partie est terminé
+                match = True # La partie est finis
                 print("Le maître du jeu a remporté la partie, la clé est à lui !")
                 time.sleep(2)
                 return False # Le joueur a perdu la perdu
@@ -203,7 +203,7 @@ def jeu_lance_des() :
         essaie += 1 # Incrémentation du compteur d'essais
 
     # Si la partie est un match donc ce massage s'affiche
-    if match == False:
+    if not match :
         print("Aucun joueur n'a obtenu un 6 après trois essais...")
         print()
         time.sleep(2)

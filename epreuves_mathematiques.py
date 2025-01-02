@@ -25,6 +25,7 @@ Date de création : 05/12/2024
 import random
 import time
 
+
 """
 Role : # Calcul la factorielle d'un nombre
 Paramètre : n (int) : Le nombre dont on veut calculer la factorielle.
@@ -55,9 +56,11 @@ def epreuve_math_factorielle() :
     reponse_donnee = y # Réponse utilisateur
 
     if reponse_correcte == reponse_donnee: # Comparaison de la réponse
+        print()
         print("Correct! Vous gagnez une clé")
         return True # La réponse à étè trouvé
     else :
+        print()
         print("Désolé la réponse correcte était {}.".format(reponse_correcte))
         return False  # La réponse n'a pas étè trouvé
 
@@ -107,9 +110,11 @@ def epreuve_math_premier() :
     time.sleep(2)
     x = int(input("Votre réponse : ")) # Demande au joueur de donner une réponse
     if x == premier_plus_proche(n) : # Vérifie si la réponse est correcte
+        print()
         print("Correct! Vous gagnez une clé.")
         return True # Réussite de l'épreuve
     else :
+        print()
         print("Désolé la réponse correcte était {}.".format(premier_plus_proche(n)))
         return False # Échec de l'épreuve
 
@@ -161,12 +166,15 @@ def epreuve_roulette_mathematique() :
 
     # Vérifie si la réponse est correcte
     if reponse_utilisateur == variable_1 or reponse_utilisateur == variable_2:
+        print()
         print("Bonne réponse! Vous avez gagné une clé.")
         return True
     else:
         if y == "+" or y == "-":
+            print()
             print("Désolé la bonne réponse était {}.".format(variable_1))
         else:
+            print()
             print("Désolé la bonne réponse était {}.".format(variable_2))
         return False
 
@@ -181,7 +189,7 @@ et solution est la solution de l'équation arrondie au centième.
 """
 def resoudre_equation_lineaire() :
 
-    a = random.randint(0,10) # Coefficient de x (évite 0 pour ne pas diviser par 0)
+    a = random.randint(1,10) # Coefficient de x (évite 0 pour ne pas diviser par 0)
     b = random.randint(0,10)  # Constante
     solution = round(-b/a,2) # Calcule la solution arrondie au centième
     return a,b,solution  # Renvoie les paramètres de l'équation et la solution
@@ -205,14 +213,25 @@ def epreuve_math_equation() :
     time.sleep(2)
     reponse = int(input(" Quelle est la valeur de x au centième prés : "))
 
-    if reponse == solution : # Vérifie si la réponse est correcte
+    if reponse == solution :
+        print()# Vérifie si la réponse est correcte
         print("Correct! Vous gagnez une clé.")
         return True
     else :
+        print()
         print("Désolé la réponse correcte était {}".format(solution))
         return False
 
-
+def message_intro_math () :
+    print("Prêt pour un challenge mathématique ? L’aventure commence maintenant !")
+    time.sleep(5)
+    print(
+        "L’heure du défi a sonné ! Une des épreuves suivantes te sera attribuée au hasard : factorielle, nombres premiers, roulette mathématique ou équations.")
+    time.sleep(5)
+    print()
+    print("Roulement de tambour… Découvrons ensemble quel défi te sera attribué !")
+    time.sleep(3)
+    print()
 
 """
 Fonction principale pour choisir une épreuve mathématique au hasard
@@ -221,24 +240,22 @@ Paramètre : Aucun
 Résultat retourné : Renvoie les résultats de l'épreuve choisie
 """
 def epreuve_math() :
-    print()
+
     print("Prêt pour un challenge mathématique ? L’aventure commence maintenant !")
     time.sleep(5)
-    print()
-
     print("L’heure du défi a sonné ! Une des épreuves suivantes te sera attribuée au hasard : factorielle, nombres premiers, roulette mathématique ou équations.")
-    time.sleep(7)
+    time.sleep(3)
     print()
-
     print("Roulement de tambour… Découvrons ensemble quel défi te sera attribué !")
     time.sleep(3)
     print()
 
+
     # Liste des épreuves disponibles.
-    epreuves = [epreuve_math_factorielle, epreuve_math_premier, epreuve_roulette_mathematique,epreuve_math_equation]
+    epreuves = [epreuve_math_factorielle, epreuve_math_premier, epreuve_roulette_mathematique, epreuve_math_equation]
     resultat_epreuve = random.choice(epreuves)()  # Choisit une épreuve au hasard et l'exécute
 
-    if resultat_epreuve == True :  # Si l'épreuve est réussie
+    if resultat_epreuve :  # Si l'épreuve est réussie
         return True
     else :
         return False
