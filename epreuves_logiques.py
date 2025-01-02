@@ -129,16 +129,16 @@ def tour_joueur(grille) :
     boucle_secondaire = False
     boucle_final = True
 
-    while boucle_principal == False:
+    while not boucle_principal :
         # Demander au joueur de saisir ses coordonnées
 
-        while boucle_secondaire == False:
+        while not boucle_secondaire :
             coordonee = input("Joueur X, c'est à vous. Où voulez-vous placer votre symbole (1,1) ? ")
             if coordonee == "1,1" or coordonee == "1,2" or coordonee == "1,3" or coordonee == "2,1" or coordonee == "2,2" or coordonee == "2,3" or coordonee == "3,1" or coordonee == "3,2" or coordonee == "3,3" :
                 boucle_secondaire = True
 
         # Boucle ou cas s'il y a une saisie invalide
-        while boucle_final == False:
+        while not boucle_final :
             coordonee = input("Veuillez saisir une case valide : ")
             if coordonee == "1,1" or coordonee == "1,2" or coordonee == "1,3" or coordonee == "2,1" or coordonee == "2,2" or coordonee == "2,3" or coordonee == "3,1" or coordonee == "3,2" or coordonee == "3,3":
                 boucle_final = True

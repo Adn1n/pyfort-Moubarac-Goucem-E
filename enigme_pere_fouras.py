@@ -97,6 +97,7 @@ def enigme_pere_fouras() :
             print("Excellente déduction, aventurier ! Vous gagnez une clé.")
             time.sleep(2)
             resultat = True # Indique que le joueur a trouvé la bonne réponse
+            return True
 
         else :
             essai_restant -= 1 # Réduit le nombre d'essais restants
@@ -128,5 +129,5 @@ def enigme_pere_fouras() :
                 return False # Le joueur a échoué l'épreuve
 
 
-enigme_pere_fouras()
+
 
