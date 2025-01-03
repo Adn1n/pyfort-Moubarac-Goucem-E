@@ -39,6 +39,7 @@ def message_bienvenue():
     print()
     time.sleep(4)
 
+
 """
 Fonction principal de l'épreuve de bonneteau
 Role : Simule le jeu du bonneteau où le joueur doit deviner sous quel bonneteau se trouve la clé.
@@ -80,7 +81,6 @@ def bonneteau() :
         # Vérification si le joueur a trouvé la clé
         if choix_joueur == placement_cle:
             print("Félicitations ! Vous avez trouvé la clé sous le bonneteau choisi.")
-            print()
             time.sleep(4)
             reponse = True
 
@@ -245,8 +245,9 @@ def epreuve_hasard() :
     epreuves = [bonneteau,jeu_lance_des]  # Liste des épreuves possibles
     epreuves_choisie = random.choice(epreuves)() # Choix aléatoire de l'épreuve
 
+
     # Permet de savoir si le joueur a remporté l'épreuve ou pas
-    if epreuves_choisie == True :
+    if epreuves_choisie :
         return True
     else :
         return False
