@@ -105,17 +105,17 @@ Résultat retourné : Renvoi TRUE si le joueur a donné la bonne réponse,
 def epreuve_math_premier() :
     print("Les nombres premiers t’attendent. Sauras-tu relever ce défi ?!")
     time.sleep(3)
-    n = random.randint(10,20)
-    print("Épreuve de Mathématiques: Trouver le nombre premier le plus proche de " + str(n) +".")
+    nombre_genere = random.randint(10,20)
+    print("Épreuve de Mathématiques: Trouver le nombre premier le plus proche de " + str(nombre_genere) +".")
     time.sleep(2)
-    x = int(input("Votre réponse : ")) # Demande au joueur de donner une réponse
-    if x == premier_plus_proche(n) : # Vérifie si la réponse est correcte
+    reponse = int(input("Votre réponse : ")) # Demande au joueur de donner une réponse
+    if reponse == premier_plus_proche(nombre_genere) : # Vérifie si la réponse est correcte
         print()
         print("Correct! Vous gagnez une clé.")
         return True # Réussite de l'épreuve
     else :
         print()
-        print("Désolé la réponse correcte était {}.".format(premier_plus_proche(n)))
+        print("Désolé la réponse correcte était {}.".format(premier_plus_proche(nombre_genere)))
         return False # Échec de l'épreuve
 
 
@@ -142,15 +142,15 @@ def epreuve_roulette_mathematique() :
 
     print("Nombres sur la roulette :", l)
 
-    y = random.choice(["+", "-", "*"]) # Choisit une opération mathématique au hasard
+    signe = random.choice(["+", "-", "*"]) # Choisit une opération mathématique au hasard
 
     # Effectue le calcul correspondant
-    if y == "+":
+    if signe == "+":
         for i in range(6):
             variable_1 += l[i] # Additionne tous les nombres de la liste
         print("Calculez le résultat en combinant ces nombres avec une addition.")
         time.sleep(2)
-    elif y == "-":
+    elif signe == "-":
         variable_1 = l[0] # Initialise avec le premier élément
         for i in range(1, 6):
             variable_1 -= l[i] # Soustrait les autres nombres
@@ -170,14 +170,13 @@ def epreuve_roulette_mathematique() :
         print("Bonne réponse! Vous avez gagné une clé.")
         return True
     else:
-        if y == "+" or y == "-":
+        if signe == "+" or signe == "-":
             print()
             print("Désolé la bonne réponse était {}.".format(variable_1))
         else:
             print()
             print("Désolé la bonne réponse était {}.".format(variable_2))
         return False
-
 
 
 """
