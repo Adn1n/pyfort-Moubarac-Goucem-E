@@ -8,8 +8,8 @@ Ce fichier contient les épreuves liées au hasard dans le jeu Fort Boyard. Il i
 Une fonction principale choisit et exécute l'une des épreuves de façon aléatoire.
 
 Auteurs :
--Adnan MOUBARAC : Développement des messages de bienvenues, et l'épreuve de lance dés
--Cylia GOUCEM : Développement du jeu de bonneteau et de l'ergonomie
+-Adnan MOUBARAC : Développement des messages de bienvenues, et l'épreuve de bonneteau
+-Cylia GOUCEM : Développement du jeu de lance dés et de l'ergonomie
 
 Date de création : 07/12/2024
 """
