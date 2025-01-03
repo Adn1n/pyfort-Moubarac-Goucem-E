@@ -17,6 +17,7 @@ import json
 import random
 import time
 
+
 """
 Fonction qui introduit l'épreuve
 Role : Affiche un texte d'introduction et les règles pour l'épreuve des énigmes du Père Fouras.
@@ -49,6 +50,8 @@ Résultat retourné : True si le joueur trouve la bonne réponse à l'énigme.
                     False si le joueur échoue après avoir épuisé ses trois essais.
 """
 def enigme_pere_fouras() :
+
+    nom_epreuve = "Énigme du Pére Fouras"
 
     dico = {} # Affectation d'un set vide
     essai = 1 # Initialisation compteur essaie
@@ -108,7 +111,7 @@ def enigme_pere_fouras() :
                 time.sleep(2)
                 print('La réponse était {}. '.format(enigme_choisie["reponse"]))
                 time.sleep(2)
-                print("Courage, il vous reste {} encore essai(s)".format(essai_restant))
+                print("Courage, il vous reste encore {} essai(s)".format(essai_restant))
                 print()
                 time.sleep(3)
                 essai += 1 # Met à jour le compteur
