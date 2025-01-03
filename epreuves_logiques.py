@@ -91,7 +91,7 @@ def coup_maitre(grille,symbole) :
                 grille[i][j] = symbole
                 if verifier_victoire(grille,symbole):
                     grille[i][j] = " "
-                    return (i,j)
+                    return i,j
                 grille[i][j] = " "
 
     # Deuxième priorité : bloquer le joueur si nécessaire
@@ -253,7 +253,6 @@ Résultat retourné :
 def jeu_tictactoe() :
     # Création d'une grille vide
     grille = []
-    nom_epreuve = "Jeu du Morpion"
 
     for i in range(3):
         ligne = []
@@ -271,6 +270,7 @@ def jeu_tictactoe() :
     print()
     afficher_grille(grille)
     time.sleep(4)
+
 
     while not match: # Boucle principale qui alterne entre joueur et maitre du jeu
         print()
@@ -310,6 +310,4 @@ def jeu_tictactoe() :
             print("Match nul ! Aucune victoire cette fois-ci.")
             match = True
             return False
-
-
 
