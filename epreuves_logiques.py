@@ -253,6 +253,7 @@ Résultat retourné :
 def jeu_tictactoe() :
     # Création d'une grille vide
     grille = []
+    nom_epreuve = "Jeu du Morpion"
 
     for i in range(3):
         ligne = []
@@ -281,7 +282,7 @@ def jeu_tictactoe() :
             print()
             print("Félicitations ! Vous avez gagné.")
             match = True
-            return True
+            return True,
 
         if verifier_resultat(grille):
             print()

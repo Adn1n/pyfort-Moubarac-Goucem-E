@@ -148,7 +148,7 @@ def salle_De_Tresor () :
                 time.sleep(2)
 
 
-    if reponse_correcte == True: # Vérification de la réponse
+    if reponse_correcte : # Vérification de la réponse
         print()
         print("Félicitations, vous avez remporté la partie !")
         return True # Le joueur a trouvé la bonne réponse
