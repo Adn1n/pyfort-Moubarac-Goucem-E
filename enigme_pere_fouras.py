@@ -51,9 +51,6 @@ Résultat retourné : True si le joueur trouve la bonne réponse à l'énigme.
 """
 def enigme_pere_fouras() :
 
-    nom_epreuve = "Énigme du Pére Fouras"
-
-    dico = {} # Affectation d'un set vide
     essai = 1 # Initialisation compteur essaie
     essai_restant = 3 # Initialisation compteur essaie-restant
     resultat = False # Indicateur pour savoir si le joueur a gagné
