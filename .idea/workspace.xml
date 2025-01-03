@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="Read me">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/epreuves_hasard.py" beforeDir="false" afterPath="$PROJECT_DIR$/epreuves_hasard.py" afterDir="false" />
-    </list>
+    <list default="true" id="627eaabe-7958-40bc-ab5f-e39c80d8d513" name="Changes" comment="Finis" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,20 +21,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "assignee": "Adn1n",
-      "author": "Playboicarti92i"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;Adn1n&quot;,
+      &quot;author&quot;: &quot;Playboicarti92i&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Adn1n",
-    "author": "Playboicarti92i"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Adn1n&quot;,
+    &quot;author&quot;: &quot;Playboicarti92i&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Adn1n/Projet_python.git&quot;,
@@ -58,12 +54,14 @@
   "keyToString": {
     "Python.enigme_pere_fouras.executor": "Run",
     "Python.epreuve_finale.executor": "Run",
-    "Python.epreuves_hasard.executor": "Run",
-    "Python.epreuves_mathematiques.executor": "Run",
+    "Python.epreuves_hasard.executor": "Debug",
+    "Python.epreuves_mathematiques.executor": "Debug",
     "Python.fonctions_utiles.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/adnan/PycharmProjects/Projet_python/Projet_python",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,6 +114,8 @@
       <updated>1733311432920</updated>
       <workItem from="1733311435267" duration="59667000" />
       <workItem from="1734614789502" duration="46676000" />
+      <workItem from="1735786402051" duration="19228000" />
+      <workItem from="1735923750241" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="commit message">
       <option name="closed" value="true" />
@@ -277,7 +277,119 @@
       <option name="project" value="LOCAL" />
       <updated>1735400586781</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Epreuves Harsard commenataires Finis">
+      <option name="closed" value="true" />
+      <created>1735402090216</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1735402090216</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Épreuves énigmes du Père FOURAS commentaire finis">
+      <option name="closed" value="true" />
+      <created>1735402708827</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1735402708827</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Épreuves énigmes du Père FOURAS commentaire finis">
+      <option name="closed" value="true" />
+      <created>1735403759541</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1735403759541</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Épreuves finale commentaire finis">
+      <option name="closed" value="true" />
+      <created>1735403775087</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1735403775087</updated>
+    </task>
+    <task id="LOCAL-00025" summary="readme">
+      <option name="closed" value="true" />
+      <created>1735405696904</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1735405696904</updated>
+    </task>
+    <task id="LOCAL-00026" summary="FINIS">
+      <option name="closed" value="true" />
+      <created>1735414583391</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1735414583391</updated>
+    </task>
+    <task id="LOCAL-00027" summary="FINIS">
+      <option name="closed" value="true" />
+      <created>1735415209898</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1735415209898</updated>
+    </task>
+    <task id="LOCAL-00028" summary="FINIS">
+      <option name="closed" value="true" />
+      <created>1735415695157</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1735415695157</updated>
+    </task>
+    <task id="LOCAL-00029" summary="FINIS">
+      <option name="closed" value="true" />
+      <created>1735507955108</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1735507955108</updated>
+    </task>
+    <task id="LOCAL-00030" summary="En cours">
+      <option name="closed" value="true" />
+      <created>1735508087882</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1735508087882</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Finis">
+      <option name="closed" value="true" />
+      <created>1735754687914</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1735754687914</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Finis">
+      <option name="closed" value="true" />
+      <created>1735848982345</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1735848982345</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Finis">
+      <option name="closed" value="true" />
+      <created>1735848989184</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1735848989184</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Finis">
+      <option name="closed" value="true" />
+      <created>1735851469852</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1735851469852</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,14 +417,22 @@
     <MESSAGE value="Commentaire epreuves hasards terminé" />
     <MESSAGE value="Epreuve Math Commenaire tout finis" />
     <MESSAGE value="Read me" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read me" />
+    <MESSAGE value="Epreuves Harsard commenataires Finis" />
+    <MESSAGE value="Épreuves énigmes du Père FOURAS commentaire finis" />
+    <MESSAGE value="Épreuves finale commentaire finis" />
+    <MESSAGE value="readme" />
+    <MESSAGE value="FINIS" />
+    <MESSAGE value="En cours" />
+    <MESSAGE value="Finis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finis" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Projet_python$epreuve_finale.coverage" NAME="epreuve_finale Coverage Results" MODIFIED="1735215319674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projet_python$epreuves_hasard.coverage" NAME="epreuves_hasard Coverage Results" MODIFIED="1734471571428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projet_python$fonctions_utiles.coverage" NAME="fonctions_utiles Coverage Results" MODIFIED="1734877558033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projet_python$epreuves_mathematiques.coverage" NAME="epreuves_mathematiques Coverage Results" MODIFIED="1735217718051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projet_python$main.coverage" NAME="main Coverage Results" MODIFIED="1734615064956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Projet_python$enigme_pere_fouras.coverage" NAME="enigme_pere_fouras Coverage Results" MODIFIED="1735145250626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$epreuve_finale.coverage" NAME="epreuve_finale Coverage Results" MODIFIED="1735786355128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$epreuves_hasard.coverage" NAME="epreuves_hasard Coverage Results" MODIFIED="1735416349851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$fonctions_utiles.coverage" NAME="fonctions_utiles Coverage Results" MODIFIED="1735779611395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$test.coverage" NAME="test Coverage Results" MODIFIED="1735832421232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$epreuves_mathematiques.coverage" NAME="epreuves_mathematiques Coverage Results" MODIFIED="1735416292513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$enigme_pere_fouras.coverage" NAME="enigme_pere_fouras Coverage Results" MODIFIED="1735572764617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Projet_python$main.coverage" NAME="main Coverage Results" MODIFIED="1735921869210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
