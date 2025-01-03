@@ -31,11 +31,11 @@ Role : # Calcul la factorielle d'un nombre
 Paramètre : n (int) : Le nombre dont on veut calculer la factorielle.
 Résultat retourné : La factorielle de n.
 """
-def factorielle(n) :
-    x = 1 # # Initialisation à un car la factorielle est un produit.
-    for i in range(1, n + 1):
-        x *= i # Multiplie x par i à chaque itération.
-    return x # Renvoie la factorielle
+def factorielle(nombre) :
+    resultat_factorielle = 1 # # Initialisation à un car la factorielle est un produit.
+    for i in range(1, nombre + 1):
+        resultat_factorielle *= i # Multiplie x par i à chaque itération.
+    return resultat_factorielle # Renvoie la factorielle
 
 """
 Role : Propose à l'utilisateur de calculer la factorielle d'un nombre choisi aléatoirement
@@ -50,10 +50,10 @@ def epreuve_math_factorielle() :
     print(" Épreuve de Mathématiques: Calculer la factorielle de ",x)
     time.sleep(2)
 
-    y = int(input(" Votre réponse : ")) # Récupération de la réponse de l'utilisateur
+    reponse_donnee  = int(input(" Votre réponse : ")) # Récupération de la réponse de l'utilisateur
 
     reponse_correcte = factorielle(x) # Calcul de la réponse correcte gràce à notre fonction factorielle
-    reponse_donnee = y # Réponse utilisateur
+
 
     if reponse_correcte == reponse_donnee: # Comparaison de la réponse
         print()
@@ -222,6 +222,13 @@ def epreuve_math_equation() :
         print("Désolé la réponse correcte était {}".format(solution))
         return False
 
+
+"""
+Fonction qui permet d'afficher une introduction pour l'épreuve de mathématiques
+Role : Affichage introduction.
+Paramètre : Aucun
+Résultat retourné : Aucun (Affichage)
+"""
 def message_intro_math () :
     print("Prêt pour un challenge mathématique ? L’aventure commence maintenant !")
     time.sleep(5)
@@ -253,15 +260,12 @@ def epreuve_math() :
 
     # Liste des épreuves disponibles.
     epreuves = [epreuve_math_factorielle, epreuve_math_premier, epreuve_roulette_mathematique, epreuve_math_equation]
-    resultat_epreuve = random.choice(epreuves)()  # Choisit une épreuve au hasard et l'exécute
+    epreuve_choisie = random.choice(epreuves)()  # Choisit une épreuve au hasard et l'exécute
 
-    if resultat_epreuve :  # Si l'épreuve est réussie
+    if epreuve_choisie :  # Si l'épreuve est réussie
         return True
     else :
         return False
-
-
-
 
 
 
