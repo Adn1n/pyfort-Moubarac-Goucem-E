@@ -12,9 +12,8 @@ Date de création : 17/12/2024
 """
 
 # Import des bibliothèques nécessaires
-import random
 import time
-
+import datetime as dt
 from epreuves_mathematiques import epreuve_math
 from epreuves_hasard import epreuve_hasard
 from epreuves_logiques import jeu_tictactoe
@@ -44,6 +43,8 @@ Paramètre : la chaîne de caractères à transformer (chaine)
 Résultat retourné : la chaîne avec la première lettre en majuscule (premier_lettre + reste)
 """
 def premier_caractere_majuscule(chaine) :
+    if not chaine:  # Vérifie si la chaîne est vide
+        return ""  # Retourne une chaîne vide
     chaine = chaine.lower() # Transformation de la chaine avec toutes les lettres en minuscules
     premier_lettre = chaine[0] # Affectation de la premiere lettre
     if 'a' <= premier_lettre <= 'z': # Condition si la premiere lettre se trouve en 'a' et 'z'
@@ -61,27 +62,26 @@ Résultat retourné : la chaîne avec la première lettre en majuscule de chaque
 """
 
 
-def lettre_majuscule(chaine):
+def lettre_majuscule(chaine) :
     resultat = ""
     chaine = chaine.lower()  # Convertit la chaine en minuscule
     liste = chaine.split(' ')  # Création d'une liste avec chaques mots
 
     for mot in liste:  # Parcourt chaques mots de la liste
-        maj = mot[0]  # Affectation de la premiére lettre de chaque
-        reste = mot[1:]  # Affectation des restes des mots
+        if mot : # Si le mot existe
+            maj = mot[0]  # Affectation de la premiére lettre de chaque
+            reste = mot[1:]  # Affectation des restes des mots
 
-        if 'a' <= maj <= 'z':
-            maj = chr(ord(maj) - 32)  # Convertit la premiere lettre en majuscule
+            if 'a' <= maj <= 'z':
+                maj = chr(ord(maj) - 32)  # Convertit la premiere lettre en majuscule
 
-            nouveau_mot = maj + reste  # Ajout du mot
+                nouveau_mot = maj + reste  # Ajout du mot
 
-        resultat += nouveau_mot + " "  # Ajout de chaques mots
+            resultat += nouveau_mot + " "  # Ajout de chaques mots
 
     return resultat
 
 
-equipe_global = [] # Création d'une liste global vide
-nb_joueur_global = 0 # Création d'une variable globale
 
 """
 Fonction de composition d'équipe
@@ -89,13 +89,13 @@ Rôle : Permet au joueur de créer une équipe de 1 à 3 joueurs, définissant l
 Paramètres : Aucun
 Résultat retourné : Une liste de dictionnaires représentant les joueurs et le nombre de joueurs.
 """
-def composer_equipe():
+def composer_equipe() :
     liste_equipe = []
     valide = False
     est_leader = False
     verif_leader = False
 
-    print("Bienvenue dans la composition de ton équipe !")
+    print("Commençons par la composition de ton équipe !")
     time.sleep(2)
 
     print("Combien de joueurs veux-tu inscrire dans ton équipe ? ")
@@ -103,7 +103,7 @@ def composer_equipe():
     nb_de_joueur = int(input())
 
     # Validation du nombre de joueurs
-    while valide == False:
+    while not valide :
 
         if nb_de_joueur > 3 or nb_de_joueur <= 0: # Si le nb de joueur est supérieur à trois ou inférieur ou égale à zéro
             print("Veuillez saisir un nombre de joueurs entre 1 et 3. ")
@@ -111,40 +111,36 @@ def composer_equipe():
         else:
             valide = True  # Nb de joueur correct
 
-    global nb_joueur_global # Affectation de la variable nb_joueur_global en tant que global
-    nb_joueur_global = nb_de_joueur # Prend la valeur du nb de joueur affecter dans la fonction
 
 
 
     print("Parfait ! {} joueur(s) ont été inscrits dans ton équipe.".format(nb_de_joueur))
     time.sleep(2)
+
     # Inscription de chaque en demandant leurs noms, leurs professions, et s'il est leader
     for i in range(nb_de_joueur):
-        print("Inscription du Joueur {} ".format(i + 1))
         print()
+        print("Inscription du Joueur {} ".format(i + 1))
+
         time.sleep(1)
 
-        nom = input("Entrez le nom du joueur : ")
-        nom = nom.lower() # La variable est convertit en minuscules
+        nom = input("Entrez le nom du joueur : ").lower() # La variable est convertit en minuscules
         nom = lettre_majuscule(nom) #La premiere lettre devient une majuscule
 
-        profesion = input("Entrez le profession du joueur : ")
-        profesion = profesion.lower() # La variable est convertit en minuscules
+        profesion = input("Entrez le profession du joueur : ").lower() # La variable est convertit en minuscules
         profesion = premier_caractere_majuscule(profesion) # La premiere lettre devient une majuscule
 
         if not verif_leader : # Vérification pour savoir s'il est bien leader
             leader_valide = False # Vérification de la saisie
             #Boucle principale pour la vérification
-            while leader_valide == False:
-                print("Ce joueur est-il le leader ? ")
-                leader = input()
+            while not leader_valide :
+                leader = input("Ce joueur est-il le leader ? ")
                 leader = leader.lower()
                 print()
                 if leader in ["oui", "non"]: # La saisie de l'utilisateur doit etre soit "oui" ou "non"
                     leader_valide = True
                 else:
-                    print("Votre saisie est incorrecte. ")
-                    print("Veuillez répondre par 'oui' ou 'non' ")
+                    print("Réponse incorrecte. Veuillez répondre par 'oui' ou 'non'.")
                     time.sleep(1)
 
             if leader == "oui": # S'il est le leader
@@ -159,18 +155,17 @@ def composer_equipe():
     leader_trouver = False # Pour trouver s'il existe un leader
 
     for joueur in liste_equipe: # Parcourt les différents dictionnaires dans la liste
-        if joueur["leader"] == True: # S'il il y a un leader
+        if joueur["leader"] : # S'il il y a un leader
             leader_trouver = True # Leader a étè trouvé
 
     if not leader_trouver: # Si le leader n'a oas étè trouvé
-        print('Le premier candidat a étè attribuer comme leader.')
+        print("Aucun leader n'a été choisi. Le premier joueur sera attribué comme leader.")
         time.sleep(2)
         liste_equipe[0]['leader'] = True # Le premier candidat devient leader
 
-    global equipe_global
-    equipe_global = liste_equipe
-    return liste_equipe, nb_de_joueur
-
+    print("Équipe composée avec succès !")
+    time.sleep(2)
+    return liste_equipe
 
 
 
@@ -182,6 +177,9 @@ Paramètres : liste_equipe (liste des joueurs disponibles)
 Résultat retourné : Le dictionnaire correspondant au joueur sélectionné.
 """
 def choisir_joueur(liste_equipe) :
+
+    print("Choisissez un joueur pour participer à l'épreuve :")
+    print()
     i = 1 # Pour l'affichage des numéros des joueurs
     print("-"*55)
     # Affichage des joueurs disponibles
@@ -189,7 +187,7 @@ def choisir_joueur(liste_equipe) :
 
         a = joueur['nom']
         b = joueur['profesion']
-        if joueur['leader'] == True : # S'il est le leader
+        if joueur['leader'] :  # S'il est le leader
             c = "Leader"
         else :
             c = "Membre"
@@ -199,20 +197,23 @@ def choisir_joueur(liste_equipe) :
     print("-" * 55)
 
     # Saisie du choix du joueur
-    joueur_choisie =  int(input("Entrez le numéro du joueur:"))
+    joueur_choisie =  int(input("Entrez le numéro du joueur : "))
     #Boucle permettant de choisir un joueur entre 1 et le nombre de joueurs disponible
-    while joueur_choisie < 1 or joueur_choisie > nb_joueur_global :
+    while joueur_choisie < 1 or joueur_choisie > len(liste_equipe) :
         print()
-        print("Saisie Incorrect")
-        joueur_choisie = int(input(" Veuillez saisir un joueur disponible : "))
+        print("Saisie incorrecte. Veuillez choisir un joueur valide.")
+        joueur_choisie = int(input("Entrez le numéro du joueur : "))
         print()
 
+
     if joueur_choisie == 1 :
-        return equipe_global[0]
+        return liste_equipe[0]
     elif joueur_choisie == 2 :
-        return equipe_global[1]
+        return liste_equipe[1]
     elif joueur_choisie == 3 :
-        return equipe_global[2]
+        return liste_equipe[2]
+
+
 
 
 
@@ -224,6 +225,8 @@ Résultat retourné : Aucun
 """
 def menu_epreuves() :
     # Affichage des choix d'épreuves
+
+
     print()
     print('Menu')
     print()
@@ -235,18 +238,78 @@ def menu_epreuves() :
 
     # Saisie et validation du choix
     choix = int(input("Choix : "))
+    print()
     while choix < 1 or choix > 4 :
-        choix = int(input("Saisissez un choix entre 1 et 4: "))
+        choix = int(input("Saisissez un choix entre 1 et 4 : "))
+        print()
 
-    # Exécution de l'épreuve correspondante
-    if choix == 1 :
-        epreuve_math()
-    elif choix == 2 :
-        jeu_tictactoe()
-    elif choix == 3 :
-        epreuve_hasard()
-    else :
-        enigme_pere_fouras()
+    return choix
+
+
+"""
+Fonction : Formate l'heure de maniére "YYYY-MM-DD HH:MM:SS"
+Rôle : Récupère l'horodatage actuel sous le format "YYYY-MM-DD HH:MM:SS".
+Paramètres : Aucun
+Résultat retourné : 
+- Une chaîne de caractères contenant la date et l'heure actuelles formatées.
+"""
+def heure():
+    heure_fonction = dt.datetime.today() # Récupérer l'heure actuelle
+    x = str(heure_fonction) # Convertir l'objet datetime en chaîne de caractères
+
+    date_heure = [] # Liste pour stocker les parties de la date et de l'heure
+
+    # Séparer la date et l'heure
+    list_date_heure = x.split(" ")
+    date_exacte = list_date_heure[0] # Obtenir la partie date
+
+    # Séparer l'heure exacte et les fractions de secondes
+    heure = list_date_heure[1].split(".")
+    heure_exacte = heure[0]
+
+    # Formatage de la date et de l'heure pour l'horodatage
+    horodage ="{} {}".format(date_exacte, heure_exacte)
+
+    return horodage
+
+
+"""
+Fonction : Écrit une ligne contenant les informations dans le fichier d'historique.
+Rôle : Enregistre les informations sur une partie dans un fichier d'historique.
+Paramètres : 
+- joueur (str) : Nom du joueur.
+- epreuve (str) : Nom de l'épreuve réalisée.
+- resultat (str) : Résultat de l'épreuve ("Gagné", "Perdu", etc.).
+- cles (int) : Nombre de clés obtenues.
+Résultat retourné : Aucun
+
+"""
+def ajouter_historique(joueur, epreuve, resultat, cles):
+    with open("data/output/historique.txt", "a") as f : # Ouverture du fichier en mode append
+        heure_jeu = heure() # Récupérer l'horodatage actuel
+
+        # Créer une entrée formatée pour l'historique
+        entree = "Date : {} |Joueur : {} |Épreuve : {} |Résultat : {} |Clés : {}\n".format(heure_jeu,joueur,epreuve,resultat,cles)
+        f.write(entree) # Écrire l'entrée dans le fichier
+
+
+"""
+Fonction : Affiche chaque entrée, séparant les informations par "|".
+Rôle : Affiche les entrées du fichier d'historique ligne par ligne.
+Paramètres : Aucun
+Résultat retourné : Aucun
+"""
+def affichage_historique():
+
+    with open("data/output/historique.txt", "r") as f : # Ouverture du fichier en mode read
+        contenu = f.readlines() # Lire toutes les lignes du fichier
+
+        for ligne in contenu: # Parcourir chaque ligne pour extraire les informations
+            liste_ligne = ligne.split("|") # Diviser chaque ligne par le séparateur "|"
+            for info in liste_ligne: # Afficher chaque information séparément
+                print(info)
+            time.sleep(1)
+
 
 
 
