@@ -223,8 +223,8 @@ def verifier_resultat(grille):
 """
 Fonction qui affiche un message de bienvenue.
 
-Paramètre : Aucun
 Rôle : Présenter les règles du jeu et motiver les joueurs.
+Paramètre : Aucun
 Résultat retourné : Aucun (affichage).
 """
 def message_de_bienvenue() :
@@ -244,8 +244,8 @@ def message_de_bienvenue() :
 """
 Fonction principale qui gère le déroulement complet de la partie.
 
-Paramètre : Aucun
 Rôle : Alterner les tours entre le joueur et le Maître du Jeu jusqu'à la fin de la partie.
+Paramètre : Aucun
 Résultat retourné :
 - True si le joueur gagne.
 - False si le Maître du Jeu gagne ou en cas de match nul.
