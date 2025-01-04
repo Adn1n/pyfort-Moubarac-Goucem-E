@@ -252,5 +252,3 @@ def epreuve_hasard() :
     else :
         return False
 
-
-

@@ -6,7 +6,7 @@ Ce fichier contient le code pour gérer l'épreuve de la Salle du Trésor dans l
 Le joueur doit découvrir un mot-code en se basant sur des indices, avec un maximum de trois essais.
 
 Auteurs :
-- Adnan MOUBARAC : Développement principal, Messages de bienvenus,
+- Adnan MOUBARAC : Développement principal, Messages de bienvenus
 - Cylia GOUCEM : Développement principal, ergonomie
 Date de création : 25/12/2024
 """
