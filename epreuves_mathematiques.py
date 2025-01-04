@@ -47,10 +47,10 @@ def epreuve_math_factorielle() :
     print("Es-tu prêt à multiplier les défis ? Voici la factorielle !")
     time.sleep(3)
     x = random.randint(1,10) # Choisit aléatoirement une variable x entre 1 et 10
-    print(" Épreuve de Mathématiques: Calculer la factorielle de ",x)
+    print("Épreuve de Mathématiques: Calculer la factorielle de ",x)
     time.sleep(2)
 
-    reponse_donnee  = int(input(" Votre réponse : ")) # Récupération de la réponse de l'utilisateur
+    reponse_donnee  = int(input("Votre réponse : ")) # Récupération de la réponse de l'utilisateur
 
     reponse_correcte = factorielle(x) # Calcul de la réponse correcte gràce à notre fonction factorielle
 
