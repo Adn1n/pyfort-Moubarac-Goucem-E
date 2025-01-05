@@ -605,17 +605,17 @@ Implémentation des jeux de calcul
 
 2) Épreuves de hasard (07/12/2024) :`
 Création des épreuves bonneteau et lancer de dés.
-Problèmes rencontrer : Lors de la saisie pour le bonneteau bien s'assurer la saisie de l'utilisateur 
+Problèmes rencontrés : Lors de la saisie pour le bonneteau bien s'assurer la saisie de l'utilisateur 
 et aussi faire en sorte que la saisie en minuscule est accepté
 
 3) Énigmes du Père Fouras (17/12/2024) :
 Intégration des énigmes à partir d’un fichier JSON et gestion des réponses des joueurs.
-Problèmes rencontrer : Lors du chargement des données au début.
+Problèmes rencontrés : Lors du chargement des données au début.
 
 4) Fonctions Utiles (17/12/2024) :
 Création des fonctions pour gérer les joueurs, les clés, et le menu des épreuves.
 Implémentation de la sauvegarde des données pour permettre un suivi des parties.
-Problèmes rencontrer : Lors de l'attribution du leader car il fallait deja qu'il n'y a qu'un seul leader.
+Problèmes rencontrés : Lors de l'attribution du leader car il fallait deja qu'il n'y a qu'un seul leader.
 Ainsi par la suite, s'il n'y a pas de leader attribuer automatiquement au premier candidat cette fonction
 
 5) Épreuves logiques (29/12/2024) :
