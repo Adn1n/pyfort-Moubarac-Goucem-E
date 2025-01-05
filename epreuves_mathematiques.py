@@ -14,7 +14,7 @@ Une fonction principale permet de sélectionner et lancer une épreuve au hasard
 
 Auteurs :
 - Adnan MOUBARAC : Développement des épreuves roulette mathématique et math équations.
-- Cylia GOUCEM : Développemetn des épreuves factorielles et nombre premier
+- Cylia GOUCEM : Développement des épreuves factorielles et nombre premier
 
 Date de création : 05/12/2024
 """
