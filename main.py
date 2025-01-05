@@ -1,3 +1,22 @@
+
+"""
+Module : Main - Fort Boyard
+
+Description :
+Ce fichier contient le code principal pour gérer le déroulement du jeu Fort Boyard.
+Les joueurs doivent constituer une équipe, participer à des épreuves variées, et collecter
+un minimum de trois clés pour accéder à l'épreuve finale dans la Salle du Trésor.
+Le module inclut des fonctions pour calculer le total de clés, introduire le jeu,
+et orchestrer le déroulement des épreuves.
+
+Auteurs :
+- Adnan MOUBARAC : Développement principal, logique de jeu, gestion des clés.
+- Cylia GOUCEM : Développement principal, gestion des clés.
+
+Date de création : 28/12/2024
+"""
+
+
 import random
 import time
 from fonctions_utiles import *
