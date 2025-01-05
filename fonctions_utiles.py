@@ -185,14 +185,14 @@ def choisir_joueur(liste_equipe) :
     # Affichage des joueurs disponibles
     for joueur in liste_equipe:
 
-        a = joueur['nom']
-        b = joueur['profesion']
+        nom = joueur['nom']
+        profession = joueur['profesion']
         if joueur['leader'] :  # S'il est le leader
-            c = "Leader"
+            statut = "Leader"
         else :
-            c = "Membre"
+            statut = "Membre"
 
-        print("{}.  {}   ( {} )   -    {} ".format(i  ,a, b, c,  ))
+        print("{}.  {}   ( {} )   -    {} ".format(i  ,nom, profession, statut,  ))
         i += 1 # Incrémentation du compteur
     print("-" * 55)
 
